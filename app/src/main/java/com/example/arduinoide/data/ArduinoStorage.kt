@@ -1,40 +1,45 @@
 package com.example.arduinoide.data
 
+import android.content.Context
 import android.content.SharedPreferences
+import android.net.Uri
 import androidx.core.content.edit
-import java.io.File
+import androidx.core.net.toUri
 
-class ArduinoStorage(preferences: SharedPreferences) {
+class ArduinoStorage(context: Context, preferences: SharedPreferences) {
+    val globalContext: Context = context
     val sharedPreferences: SharedPreferences = preferences
-    val sketchFileMemoryLocation = "arduino_ide_sketch_file_name"
-    var sketchFileName: String? = null
+    val sketchFileUriKey = "arduino_ide_sketch_uri"
+    var sketchFileUri: Uri? = null
     var sketchContent: List<String>? = null
 
     init { readSketch() }
 
     fun readSketch() {
-        val sketchOnDisplay = sharedPreferences.getString(sketchFileMemoryLocation, null)
-        if (sketchOnDisplay != null) {
-            sketchFileName = sketchOnDisplay
-            sketchContent = File(sketchFileName!!).readLines()
+        val sketchStringUri = sharedPreferences.getString(sketchFileUriKey, null)
+        if (sketchStringUri != null) {
+            sketchFileUri = sketchStringUri.toUri()
+            if (sketchFileUri != null) {
+                val inputStream = globalContext.contentResolver.openInputStream(sketchFileUri!!)
+                sketchContent = inputStream?.bufferedReader().use { it?.readLines() }
+            }
         }
     }
 
-    fun writeSketch(fileName: String?, content: List<String>?) {
-        if (fileName != null && content != null) {
-            sketchFileName = fileName
+    fun writeSketch(content: List<String>?, uri: Uri?) {
+        if (content != null) {
             sketchContent = content
             sharedPreferences.edit {
-                putString(sketchFileMemoryLocation, sketchFileName)
+                putString(sketchFileUriKey, uri.toString())
             }
         }
     }
 
     fun deleteSketch() {
-        sketchFileName = null
+        sketchFileUri = null
         sketchContent = null
         sharedPreferences.edit {
-            remove(sketchFileMemoryLocation)
+            remove(sketchFileUriKey)
         }
     }
 }

@@ -17,7 +17,7 @@ class ServiceLocator(private val context: Context) {
     }
     fun getStorage(): ArduinoStorage {
         if (!::storage.isInitialized) {
-            storage = ArduinoStorage(getPreferences())
+            storage = ArduinoStorage(context, getPreferences())
         }
         return storage
     }
