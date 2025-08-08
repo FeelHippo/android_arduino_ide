@@ -31,6 +31,7 @@ fun ArduinoIDEState(
     }
     ArduinoIDEView(
         state,
+        updateState = { state = it },
         verifySketch = { content -> service.verifySketch(content) },
         uploadSketch = { content -> service.uploadSketch(content) },
         writeSketch = { content, uri -> storage.writeSketch(content, uri) },

@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.net.Uri
 import androidx.core.content.edit
 import androidx.core.net.toUri
+import com.example.arduinoide.ui.state.ArduinoIDEStateData
 
 class ArduinoStorage(context: Context, preferences: SharedPreferences) {
     val globalContext: Context = context
@@ -26,20 +27,25 @@ class ArduinoStorage(context: Context, preferences: SharedPreferences) {
         }
     }
 
-    fun writeSketch(content: List<String>?, uri: Uri?) {
+    fun writeSketch(content: List<String>?, uri: Uri?): ArduinoIDEStateData {
         if (content != null) {
             sketchContent = content
             sharedPreferences.edit {
                 putString(sketchFileUriKey, uri.toString())
             }
         }
+        return ArduinoIDEStateData(
+            uri,
+            content,
+        )
     }
 
-    fun deleteSketch() {
+    fun deleteSketch(): ArduinoIDEStateData {
         sketchFileUri = null
         sketchContent = null
         sharedPreferences.edit {
             remove(sketchFileUriKey)
         }
+        return ArduinoIDEStateData(null, null)
     }
 }
