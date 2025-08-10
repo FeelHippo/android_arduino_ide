@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Add
@@ -26,6 +27,7 @@ import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Save
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.Icon
+import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarDefaults
@@ -44,9 +46,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
-import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import com.example.arduinoide.ui.state.ArduinoIDEStateData
@@ -64,6 +67,7 @@ enum class Destination(
     CLEAR(Action.CLEAR, Icons.Outlined.Delete, "Clear"),
 }
 
+// TODO(Filippo): eventually add all items from  functions, values (variables and constants), and structure
 val DIGITAL_ANALOG_IO = arrayOf(
     "digitalRead",
     "digitalWrite",
@@ -96,7 +100,30 @@ val BITS_AND_BYTES = arrayOf(
     "lowByte",
 )
 
-val VARIABLES = arrayOf(
+val TIME = arrayOf(
+    "delay",
+    "delayMicroseconds",
+    "micros",
+    "millis",
+)
+
+val RANDOM = arrayOf(
+    "random",
+    "randomSeed",
+)
+
+val COMMUNICATION = arrayOf(
+    "SPI",
+    "Print",
+    "Serial",
+    "Stream",
+    "Wire",
+    "begin",
+    "println",
+    "print",
+)
+
+val VARIABLES_DATA_TYPES = arrayOf(
     "array",
     "bool",
     "boolean",
@@ -111,6 +138,13 @@ val VARIABLES = arrayOf(
     "string",
     "void",
     "word",
+)
+
+val VARIABLES_SCOPE_AND_QUALIFIERS = arrayOf(
+    "const",
+    "scope",
+    "static",
+    "volatile",
 )
 
 val SKETCH = arrayOf(
@@ -137,7 +171,11 @@ enum class ArduinoLanguageStyle(val color: Color, val commands: Array<String>) {
     ARDUINO_DIGITAL_ANALOG_IO(Color(0xff81d5c1), DIGITAL_ANALOG_IO),
     ARDUINO_MATH(Color(0xffdddccd), MATH),
     ARDUINO_BITS_AND_BYTES(Color(0xfff9f6eb), BITS_AND_BYTES),
-    ARDUINO_VARIABLES(Color(0xffe8bba8), VARIABLES),
+    ARDUINO_TIME(Color(0xfff3d88e), TIME),
+    ARDUINO_RANDOM(Color(0xfff3d88e), RANDOM),
+    ARDUINO_COMMUNICATION(Color(0xfff3d88e), COMMUNICATION),
+    ARDUINO_DATA_TYPES(Color(0xffe8bba8), VARIABLES_DATA_TYPES),
+    ARDUINO_SCOPE_AND_QUALIFIERS(Color(0xffe8bba8), VARIABLES_SCOPE_AND_QUALIFIERS),
     ARDUINO_SKETCH(Color(0xfff3d88e), SKETCH),
     ARDUINO_CONTROL_STRUCTURE(Color(0xFFA5CA9C), CONTROL_STRUCTURE),
 }
@@ -245,39 +283,78 @@ fun ArduinoIDEView(
                             Text(index.toString(), color = MaterialTheme.colorScheme.tertiary)
                         }
                         Box(modifier = modifier.size(12.dp))
-                        Text(buildAnnotatedString {
-                            string.split(" ").forEach {
-                                var added = false
-                                ArduinoLanguageStyle.entries.forEach { languageStyle ->
-                                    if (
-                                        languageStyle.commands.any { command ->
-                                            it.contains(command)
-                                        }
-                                    ) {
-                                        withStyle(
-                                            style = SpanStyle(
-                                                color = languageStyle.color
-                                            )
-                                        ) {
-                                            append(it.substringBefore("("))
-                                        }
-                                        val openParentheses = it.indexOf("(")
-                                        if (openParentheses != -1) {
-                                            append("(")
-                                            append(it.substringAfter("("))
-                                        }
-                                        added = true
-                                    }
-                                }
-                                if (!added) {
-                                    append(it)
-                                }
-                                append(" ")
-                            }
-                        })
+                        var commandLine by remember {
+                            mutableStateOf(
+                                TextFieldValue(
+                                    formatArduinoCommandLine(string)
+                                )
+                            )
+                        }
+                        BasicTextField(
+                            commandLine,
+                            onValueChange = {
+                                commandLine = TextFieldValue(
+                                    formatArduinoCommandLine(it.text)
+                                )
+                            },
+                            textStyle = LocalTextStyle.current.copy(color = Color.White),
+                        )
                     }
                 }
             }
+        }
+    }
+}
+
+fun formatArduinoCommandLine(rawCommandLine: String): AnnotatedString {
+    return buildAnnotatedString {
+        rawCommandLine.split(" ").forEach { bySpace ->
+            // each word
+            bySpace.split(".").forEachIndexed { index, byDot ->
+                // each word separated by dot
+                var added = false
+                // words containing Arduino commands
+                ArduinoLanguageStyle.entries.forEach { languageStyle ->
+                    val arduinoCommand = languageStyle.commands.find { command ->
+                        // word contains arduino command
+                        byDot.contains(command) && !added
+                    }
+                    if (arduinoCommand != null) {
+                        val start = byDot.indexOf(arduinoCommand)
+                        val end = start + arduinoCommand.length
+
+                        // add dot when necessary
+                        if (index > 0) {
+                            append(".")
+                        }
+
+                        // prefix to command
+                        if (start != 0) {
+                            append(byDot.substring(0, start))
+                        }
+
+                        // command
+                        withStyle(
+                            style = SpanStyle(
+                                color = languageStyle.color
+                            )
+                        ) {
+                            append(byDot.substring(start, end))
+                        }
+
+                        // suffix to command
+                        append(byDot.substring(end, byDot.length))
+
+                        added = true
+                    }
+                }
+                // a word that does not contain an Arduino command
+                if (!added) {
+                    append(byDot)
+                }
+            }
+            // separate words
+            append(" ")
         }
     }
 }
