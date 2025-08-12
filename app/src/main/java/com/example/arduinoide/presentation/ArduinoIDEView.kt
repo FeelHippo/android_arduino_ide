@@ -48,8 +48,11 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.input.OffsetMapping
 import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.text.input.TransformedText
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import com.example.arduinoide.ui.state.ArduinoIDEStateData
@@ -283,18 +286,28 @@ fun ArduinoIDEView(
                             Text(index.toString(), color = MaterialTheme.colorScheme.tertiary)
                         }
                         Box(modifier = modifier.size(12.dp))
-                        var commandLine by remember {
+
+                        // https://stackoverflow.com/a/76897669/10708345
+                        val formattedArduinoCommandLine = formatArduinoCommandLine(string)
+                        val commandLine = remember {
                             mutableStateOf(
                                 TextFieldValue(
-                                    formatArduinoCommandLine(string)
+                                    formattedArduinoCommandLine,
+                                    selection = TextRange(
+                                        index = formattedArduinoCommandLine.length,
+                                    )
                                 )
                             )
                         }
                         BasicTextField(
-                            commandLine,
+                            commandLine.value,
                             onValueChange = {
-                                commandLine = TextFieldValue(
-                                    formatArduinoCommandLine(it.text)
+                                commandLine.value = it
+                            },
+                            visualTransformation = {
+                                TransformedText(
+                                    text = formatArduinoCommandLine(commandLine.value.text),
+                                    offsetMapping = OffsetMapping.Identity,
                                 )
                             },
                             textStyle = LocalTextStyle.current.copy(color = Color.White),
@@ -308,10 +321,13 @@ fun ArduinoIDEView(
 
 fun formatArduinoCommandLine(rawCommandLine: String): AnnotatedString {
     return buildAnnotatedString {
-        rawCommandLine.split(" ").forEach { bySpace ->
-            // each word
-            bySpace.split(".").forEachIndexed { index, byDot ->
-                // each word separated by dot
+        val lineSeparatedBySpace = rawCommandLine.split(" ")
+        // each space-separated block of the command line
+        // e.g. "int varName = analogRead(A0);" => ["int", "varname", "=", "analogRead(A0);"]
+        lineSeparatedBySpace.forEachIndexed { bySpaceIndex, bySpace ->
+            // e.g. "Serial.begin(9600);" => ["Serial", "begin(9600);"]
+            bySpace.split(".").forEachIndexed { byDotIndex, byDot ->
+                // each dot-separated block of the space-separated block
                 var added = false
                 // words containing Arduino commands
                 ArduinoLanguageStyle.entries.forEach { languageStyle ->
@@ -324,7 +340,7 @@ fun formatArduinoCommandLine(rawCommandLine: String): AnnotatedString {
                         val end = start + arduinoCommand.length
 
                         // add dot when necessary
-                        if (index > 0) {
+                        if (byDotIndex > 0) {
                             append(".")
                         }
 
@@ -353,8 +369,12 @@ fun formatArduinoCommandLine(rawCommandLine: String): AnnotatedString {
                     append(byDot)
                 }
             }
-            // separate words
-            append(" ")
+            // do not add trailing space to last element of command line
+            // this allows TransformedText() to compile
+            if (bySpaceIndex < lineSeparatedBySpace.size - 1) {
+                // separate words
+                append(" ")
+            }
         }
     }
 }
