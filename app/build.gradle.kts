@@ -2,6 +2,44 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.google.protobuf")
+}
+
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.0.0"
+    }
+    plugins {
+        create("grpc") {
+            artifact = "io.grpc:protoc-gen-grpc-java:1.0.0-pre2"
+        }
+        create("java") {
+            artifact = "io.grpc:protoc-gen-grpc-java:1.74.0"
+        }
+        create("grpckt") {
+            artifact = "io.grpc:protoc-gen-grpc-kotlin:1.4.3:jdk8@jar"
+        }
+    }
+    generateProtoTasks {
+        all().forEach {
+            it.plugins {
+                create("java") {
+                    option("lite")
+                }
+                create("grpc") {
+                    option("lite")
+                }
+                create("grpckt") {
+                    option("lite")
+                }
+            }
+            it.builtins {
+                create("kotlin") {
+                    option("lite")
+                }
+            }
+        }
+    }
 }
 
 android {
@@ -50,6 +88,15 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.material.icons.extended)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.protobuf.kotlin)
+    implementation(libs.grpc.stub.v1520)
+    implementation(libs.grpc.protobuf.v1520)
+    implementation(libs.grpc.okhttp)
+
+    implementation(libs.protobuf.java.util)
+    implementation(libs.protobuf.kotlin)
+    implementation(libs.grpc.kotlin.stub)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
