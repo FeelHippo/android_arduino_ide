@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializecompileResponse")
-public inline fun compileResponse(block: protocol_buffers.CompileResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileResponse =
-  protocol_buffers.CompileResponseKt.Dsl._create(protocol_buffers.Compile.CompileResponse.newBuilder()).apply { block() }._build()
+public inline fun compileResponse(block: protocol_buffers.CompileResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileResponse =
+  protocol_buffers.CompileResponseKt.Dsl._create(protocol_buffers.CompileResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.CompileResponse`
  */
@@ -16,17 +16,17 @@ public object CompileResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.CompileResponse.Builder
+    private val _builder: protocol_buffers.CompileResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.CompileResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.CompileResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.CompileResponse = _builder.build()
+    internal fun _build(): protocol_buffers.CompileResponse = _builder.build()
 
     /**
      * ```
@@ -107,7 +107,7 @@ public object CompileResponseKt {
      *
      * `.protocol_buffers.TaskProgress progress = 3;`
      */
-    public var progress: protocol_buffers.Common.TaskProgress
+    public var progress: protocol_buffers.TaskProgress
       @kotlin.jvm.JvmName("getProgress")
         get() = _builder.progress
       @kotlin.jvm.JvmName("setProgress")
@@ -143,7 +143,7 @@ public object CompileResponseKt {
      *
      * `.protocol_buffers.BuilderResult result = 4;`
      */
-    public var result: protocol_buffers.Compile.BuilderResult
+    public var result: protocol_buffers.BuilderResult
       @kotlin.jvm.JvmName("getResult")
         get() = _builder.result
       @kotlin.jvm.JvmName("setResult")
@@ -171,7 +171,7 @@ public object CompileResponseKt {
     public fun hasResult(): kotlin.Boolean {
       return _builder.hasResult()
     }
-    public val messageCase: protocol_buffers.Compile.CompileResponse.MessageCase
+    public val messageCase: protocol_buffers.CompileResponse.MessageCase
     @kotlin.jvm.JvmName("getMessageCase")
       get() = _builder.getMessageCase()
 
@@ -181,12 +181,12 @@ public object CompileResponseKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.CompileResponse.copy(block: `protocol_buffers`.CompileResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileResponse =
+public inline fun protocol_buffers.CompileResponse.copy(block: `protocol_buffers`.CompileResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileResponse =
   `protocol_buffers`.CompileResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Compile.CompileResponseOrBuilder.progressOrNull: protocol_buffers.Common.TaskProgress?
+public val protocol_buffers.CompileResponseOrBuilder.progressOrNull: protocol_buffers.TaskProgress?
   get() = if (hasProgress()) getProgress() else null
 
-public val protocol_buffers.Compile.CompileResponseOrBuilder.resultOrNull: protocol_buffers.Compile.BuilderResult?
+public val protocol_buffers.CompileResponseOrBuilder.resultOrNull: protocol_buffers.BuilderResult?
   get() = if (hasResult()) getResult() else null
 

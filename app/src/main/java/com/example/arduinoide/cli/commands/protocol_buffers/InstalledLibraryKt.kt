@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeinstalledLibrary")
-public inline fun installedLibrary(block: protocol_buffers.InstalledLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.InstalledLibrary =
-  protocol_buffers.InstalledLibraryKt.Dsl._create(protocol_buffers.Lib.InstalledLibrary.newBuilder()).apply { block() }._build()
+public inline fun installedLibrary(block: protocol_buffers.InstalledLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.InstalledLibrary =
+  protocol_buffers.InstalledLibraryKt.Dsl._create(protocol_buffers.InstalledLibrary.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.InstalledLibrary`
  */
@@ -16,17 +16,17 @@ public object InstalledLibraryKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.InstalledLibrary.Builder
+    private val _builder: protocol_buffers.InstalledLibrary.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.InstalledLibrary.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.InstalledLibrary.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.InstalledLibrary = _builder.build()
+    internal fun _build(): protocol_buffers.InstalledLibrary = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object InstalledLibraryKt {
      *
      * `.protocol_buffers.Library library = 1;`
      */
-    public var library: protocol_buffers.Lib.Library
+    public var library: protocol_buffers.Library
       @kotlin.jvm.JvmName("getLibrary")
         get() = _builder.library
       @kotlin.jvm.JvmName("setLibrary")
@@ -64,7 +64,7 @@ public object InstalledLibraryKt {
       return _builder.hasLibrary()
     }
 
-    public val InstalledLibraryKt.Dsl.libraryOrNull: protocol_buffers.Lib.Library?
+    public val InstalledLibraryKt.Dsl.libraryOrNull: protocol_buffers.Library?
       get() = _builder.libraryOrNull
 
     /**
@@ -76,7 +76,7 @@ public object InstalledLibraryKt {
      *
      * `.protocol_buffers.LibraryRelease release = 2;`
      */
-    public var release: protocol_buffers.Lib.LibraryRelease
+    public var release: protocol_buffers.LibraryRelease
       @kotlin.jvm.JvmName("getRelease")
         get() = _builder.release
       @kotlin.jvm.JvmName("setRelease")
@@ -109,17 +109,17 @@ public object InstalledLibraryKt {
       return _builder.hasRelease()
     }
 
-    public val InstalledLibraryKt.Dsl.releaseOrNull: protocol_buffers.Lib.LibraryRelease?
+    public val InstalledLibraryKt.Dsl.releaseOrNull: protocol_buffers.LibraryRelease?
       get() = _builder.releaseOrNull
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.InstalledLibrary.copy(block: `protocol_buffers`.InstalledLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.InstalledLibrary =
+public inline fun protocol_buffers.InstalledLibrary.copy(block: `protocol_buffers`.InstalledLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.InstalledLibrary =
   `protocol_buffers`.InstalledLibraryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.InstalledLibraryOrBuilder.libraryOrNull: protocol_buffers.Lib.Library?
+public val protocol_buffers.InstalledLibraryOrBuilder.libraryOrNull: protocol_buffers.Library?
   get() = if (hasLibrary()) getLibrary() else null
 
-public val protocol_buffers.Lib.InstalledLibraryOrBuilder.releaseOrNull: protocol_buffers.Lib.LibraryRelease?
+public val protocol_buffers.InstalledLibraryOrBuilder.releaseOrNull: protocol_buffers.LibraryRelease?
   get() = if (hasRelease()) getRelease() else null
 

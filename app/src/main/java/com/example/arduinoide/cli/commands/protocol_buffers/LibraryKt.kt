@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibrary")
-public inline fun library(block: protocol_buffers.LibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.Library =
-  protocol_buffers.LibraryKt.Dsl._create(protocol_buffers.Lib.Library.newBuilder()).apply { block() }._build()
+public inline fun library(block: protocol_buffers.LibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Library =
+  protocol_buffers.LibraryKt.Dsl._create(protocol_buffers.Library.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.Library`
  */
@@ -16,17 +16,17 @@ public object LibraryKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.Library.Builder
+    private val _builder: protocol_buffers.Library.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.Library.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.Library.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.Library = _builder.build()
+    internal fun _build(): protocol_buffers.Library = _builder.build()
 
     /**
      * ```
@@ -758,7 +758,7 @@ public object LibraryKt {
      *
      * `.protocol_buffers.LibraryLocation location = 24;`
      */
-    public var location: protocol_buffers.Lib.LibraryLocation
+    public var location: protocol_buffers.LibraryLocation
       @kotlin.jvm.JvmName("getLocation")
         get() = _builder.location
       @kotlin.jvm.JvmName("setLocation")
@@ -790,7 +790,7 @@ public object LibraryKt {
      *
      * `.protocol_buffers.LibraryLayout layout = 25;`
      */
-    public var layout: protocol_buffers.Lib.LibraryLayout
+    public var layout: protocol_buffers.LibraryLayout
       @kotlin.jvm.JvmName("getLayout")
         get() = _builder.layout
       @kotlin.jvm.JvmName("setLayout")
@@ -1134,6 +1134,6 @@ public object LibraryKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.Library.copy(block: `protocol_buffers`.LibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.Library =
+public inline fun protocol_buffers.Library.copy(block: `protocol_buffers`.LibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Library =
   `protocol_buffers`.LibraryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

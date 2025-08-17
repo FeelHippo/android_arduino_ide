@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeplatformMetadata")
-public inline fun platformMetadata(block: protocol_buffers.PlatformMetadataKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.PlatformMetadata =
-  protocol_buffers.PlatformMetadataKt.Dsl._create(protocol_buffers.Common.PlatformMetadata.newBuilder()).apply { block() }._build()
+public inline fun platformMetadata(block: protocol_buffers.PlatformMetadataKt.Dsl.() -> kotlin.Unit): protocol_buffers.PlatformMetadata =
+  protocol_buffers.PlatformMetadataKt.Dsl._create(protocol_buffers.PlatformMetadata.newBuilder()).apply { block() }._build()
 /**
  * ```
  * PlatformMetadata contains generic information about a platform (not
@@ -21,17 +21,17 @@ public object PlatformMetadataKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.PlatformMetadata.Builder
+    private val _builder: protocol_buffers.PlatformMetadata.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.PlatformMetadata.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.PlatformMetadata.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.PlatformMetadata = _builder.build()
+    internal fun _build(): protocol_buffers.PlatformMetadata = _builder.build()
 
     /**
      * ```
@@ -214,6 +214,6 @@ public object PlatformMetadataKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.PlatformMetadata.copy(block: `protocol_buffers`.PlatformMetadataKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.PlatformMetadata =
+public inline fun protocol_buffers.PlatformMetadata.copy(block: `protocol_buffers`.PlatformMetadataKt.Dsl.() -> kotlin.Unit): protocol_buffers.PlatformMetadata =
   `protocol_buffers`.PlatformMetadataKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

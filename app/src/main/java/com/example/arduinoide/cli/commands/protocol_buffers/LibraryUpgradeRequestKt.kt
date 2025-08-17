@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryUpgradeRequest")
-public inline fun libraryUpgradeRequest(block: protocol_buffers.LibraryUpgradeRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUpgradeRequest =
-  protocol_buffers.LibraryUpgradeRequestKt.Dsl._create(protocol_buffers.Lib.LibraryUpgradeRequest.newBuilder()).apply { block() }._build()
+public inline fun libraryUpgradeRequest(block: protocol_buffers.LibraryUpgradeRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUpgradeRequest =
+  protocol_buffers.LibraryUpgradeRequestKt.Dsl._create(protocol_buffers.LibraryUpgradeRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryUpgradeRequest`
  */
@@ -16,17 +16,17 @@ public object LibraryUpgradeRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryUpgradeRequest.Builder
+    private val _builder: protocol_buffers.LibraryUpgradeRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryUpgradeRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryUpgradeRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryUpgradeRequest = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryUpgradeRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryUpgradeRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object LibraryUpgradeRequestKt {
       return _builder.hasInstance()
     }
 
-    public val LibraryUpgradeRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val LibraryUpgradeRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -121,9 +121,9 @@ public object LibraryUpgradeRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryUpgradeRequest.copy(block: `protocol_buffers`.LibraryUpgradeRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUpgradeRequest =
+public inline fun protocol_buffers.LibraryUpgradeRequest.copy(block: `protocol_buffers`.LibraryUpgradeRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUpgradeRequest =
   `protocol_buffers`.LibraryUpgradeRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryUpgradeRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.LibraryUpgradeRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

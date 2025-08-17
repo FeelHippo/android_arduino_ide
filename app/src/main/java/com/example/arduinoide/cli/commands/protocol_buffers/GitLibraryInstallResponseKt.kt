@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializegitLibraryInstallResponse")
-public inline fun gitLibraryInstallResponse(block: protocol_buffers.GitLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.GitLibraryInstallResponse =
-  protocol_buffers.GitLibraryInstallResponseKt.Dsl._create(protocol_buffers.Lib.GitLibraryInstallResponse.newBuilder()).apply { block() }._build()
+public inline fun gitLibraryInstallResponse(block: protocol_buffers.GitLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.GitLibraryInstallResponse =
+  protocol_buffers.GitLibraryInstallResponseKt.Dsl._create(protocol_buffers.GitLibraryInstallResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.GitLibraryInstallResponse`
  */
@@ -16,17 +16,17 @@ public object GitLibraryInstallResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.GitLibraryInstallResponse.Builder
+    private val _builder: protocol_buffers.GitLibraryInstallResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.GitLibraryInstallResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.GitLibraryInstallResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.GitLibraryInstallResponse = _builder.build()
+    internal fun _build(): protocol_buffers.GitLibraryInstallResponse = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object GitLibraryInstallResponseKt {
      *
      * `.protocol_buffers.TaskProgress task_progress = 1;`
      */
-    public var taskProgress: protocol_buffers.Common.TaskProgress
+    public var taskProgress: protocol_buffers.TaskProgress
       @kotlin.jvm.JvmName("getTaskProgress")
         get() = _builder.taskProgress
       @kotlin.jvm.JvmName("setTaskProgress")
@@ -71,7 +71,7 @@ public object GitLibraryInstallResponseKt {
      *
      * `.protocol_buffers.GitLibraryInstallResponse.Result result = 2;`
      */
-    public var result: protocol_buffers.Lib.GitLibraryInstallResponse.Result
+    public var result: protocol_buffers.GitLibraryInstallResponse.Result
       @kotlin.jvm.JvmName("getResult")
         get() = _builder.result
       @kotlin.jvm.JvmName("setResult")
@@ -99,7 +99,7 @@ public object GitLibraryInstallResponseKt {
     public fun hasResult(): kotlin.Boolean {
       return _builder.hasResult()
     }
-    public val messageCase: protocol_buffers.Lib.GitLibraryInstallResponse.MessageCase
+    public val messageCase: protocol_buffers.GitLibraryInstallResponse.MessageCase
     @kotlin.jvm.JvmName("getMessageCase")
       get() = _builder.getMessageCase()
 
@@ -108,8 +108,8 @@ public object GitLibraryInstallResponseKt {
     }
   }
   @kotlin.jvm.JvmName("-initializeresult")
-  public inline fun result(block: protocol_buffers.GitLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.GitLibraryInstallResponse.Result =
-    protocol_buffers.GitLibraryInstallResponseKt.ResultKt.Dsl._create(protocol_buffers.Lib.GitLibraryInstallResponse.Result.newBuilder()).apply { block() }._build()
+  public inline fun result(block: protocol_buffers.GitLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.GitLibraryInstallResponse.Result =
+    protocol_buffers.GitLibraryInstallResponseKt.ResultKt.Dsl._create(protocol_buffers.GitLibraryInstallResponse.Result.newBuilder()).apply { block() }._build()
   /**
    * ```
    * Empty message, reserved for future expansion.
@@ -121,31 +121,31 @@ public object GitLibraryInstallResponseKt {
     @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
     @com.google.protobuf.kotlin.ProtoDslMarker
     public class Dsl private constructor(
-      private val _builder: protocol_buffers.Lib.GitLibraryInstallResponse.Result.Builder
+      private val _builder: protocol_buffers.GitLibraryInstallResponse.Result.Builder
     ) {
       public companion object {
         @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-        internal fun _create(builder: protocol_buffers.Lib.GitLibraryInstallResponse.Result.Builder): Dsl = Dsl(builder)
+        internal fun _create(builder: protocol_buffers.GitLibraryInstallResponse.Result.Builder): Dsl = Dsl(builder)
       }
 
       @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-      internal fun _build(): protocol_buffers.Lib.GitLibraryInstallResponse.Result = _builder.build()
+      internal fun _build(): protocol_buffers.GitLibraryInstallResponse.Result = _builder.build()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.GitLibraryInstallResponse.copy(block: `protocol_buffers`.GitLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.GitLibraryInstallResponse =
+public inline fun protocol_buffers.GitLibraryInstallResponse.copy(block: `protocol_buffers`.GitLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.GitLibraryInstallResponse =
   `protocol_buffers`.GitLibraryInstallResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.GitLibraryInstallResponse.Result.copy(block: `protocol_buffers`.GitLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.GitLibraryInstallResponse.Result =
+public inline fun protocol_buffers.GitLibraryInstallResponse.Result.copy(block: `protocol_buffers`.GitLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.GitLibraryInstallResponse.Result =
   `protocol_buffers`.GitLibraryInstallResponseKt.ResultKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.GitLibraryInstallResponseOrBuilder.taskProgressOrNull: protocol_buffers.Common.TaskProgress?
+public val protocol_buffers.GitLibraryInstallResponseOrBuilder.taskProgressOrNull: protocol_buffers.TaskProgress?
   get() = if (hasTaskProgress()) getTaskProgress() else null
 
-public val protocol_buffers.Lib.GitLibraryInstallResponseOrBuilder.resultOrNull: protocol_buffers.Lib.GitLibraryInstallResponse.Result?
+public val protocol_buffers.GitLibraryInstallResponseOrBuilder.resultOrNull: protocol_buffers.GitLibraryInstallResponse.Result?
   get() = if (hasResult()) getResult() else null
 

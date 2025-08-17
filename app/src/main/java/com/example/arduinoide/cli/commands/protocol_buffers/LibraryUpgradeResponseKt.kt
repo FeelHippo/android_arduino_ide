@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryUpgradeResponse")
-public inline fun libraryUpgradeResponse(block: protocol_buffers.LibraryUpgradeResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUpgradeResponse =
-  protocol_buffers.LibraryUpgradeResponseKt.Dsl._create(protocol_buffers.Lib.LibraryUpgradeResponse.newBuilder()).apply { block() }._build()
+public inline fun libraryUpgradeResponse(block: protocol_buffers.LibraryUpgradeResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUpgradeResponse =
+  protocol_buffers.LibraryUpgradeResponseKt.Dsl._create(protocol_buffers.LibraryUpgradeResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryUpgradeResponse`
  */
@@ -16,17 +16,17 @@ public object LibraryUpgradeResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryUpgradeResponse.Builder
+    private val _builder: protocol_buffers.LibraryUpgradeResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryUpgradeResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryUpgradeResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryUpgradeResponse = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryUpgradeResponse = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryUpgradeResponseKt {
      *
      * `.protocol_buffers.DownloadProgress progress = 1;`
      */
-    public var progress: protocol_buffers.Common.DownloadProgress
+    public var progress: protocol_buffers.DownloadProgress
       @kotlin.jvm.JvmName("getProgress")
         get() = _builder.progress
       @kotlin.jvm.JvmName("setProgress")
@@ -71,7 +71,7 @@ public object LibraryUpgradeResponseKt {
      *
      * `.protocol_buffers.TaskProgress task_progress = 2;`
      */
-    public var taskProgress: protocol_buffers.Common.TaskProgress
+    public var taskProgress: protocol_buffers.TaskProgress
       @kotlin.jvm.JvmName("getTaskProgress")
         get() = _builder.taskProgress
       @kotlin.jvm.JvmName("setTaskProgress")
@@ -107,7 +107,7 @@ public object LibraryUpgradeResponseKt {
      *
      * `.protocol_buffers.LibraryUpgradeResponse.Result result = 3;`
      */
-    public var result: protocol_buffers.Lib.LibraryUpgradeResponse.Result
+    public var result: protocol_buffers.LibraryUpgradeResponse.Result
       @kotlin.jvm.JvmName("getResult")
         get() = _builder.result
       @kotlin.jvm.JvmName("setResult")
@@ -135,7 +135,7 @@ public object LibraryUpgradeResponseKt {
     public fun hasResult(): kotlin.Boolean {
       return _builder.hasResult()
     }
-    public val messageCase: protocol_buffers.Lib.LibraryUpgradeResponse.MessageCase
+    public val messageCase: protocol_buffers.LibraryUpgradeResponse.MessageCase
     @kotlin.jvm.JvmName("getMessageCase")
       get() = _builder.getMessageCase()
 
@@ -144,8 +144,8 @@ public object LibraryUpgradeResponseKt {
     }
   }
   @kotlin.jvm.JvmName("-initializeresult")
-  public inline fun result(block: protocol_buffers.LibraryUpgradeResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUpgradeResponse.Result =
-    protocol_buffers.LibraryUpgradeResponseKt.ResultKt.Dsl._create(protocol_buffers.Lib.LibraryUpgradeResponse.Result.newBuilder()).apply { block() }._build()
+  public inline fun result(block: protocol_buffers.LibraryUpgradeResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUpgradeResponse.Result =
+    protocol_buffers.LibraryUpgradeResponseKt.ResultKt.Dsl._create(protocol_buffers.LibraryUpgradeResponse.Result.newBuilder()).apply { block() }._build()
   /**
    * ```
    * Empty message, reserved for future expansion.
@@ -157,34 +157,34 @@ public object LibraryUpgradeResponseKt {
     @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
     @com.google.protobuf.kotlin.ProtoDslMarker
     public class Dsl private constructor(
-      private val _builder: protocol_buffers.Lib.LibraryUpgradeResponse.Result.Builder
+      private val _builder: protocol_buffers.LibraryUpgradeResponse.Result.Builder
     ) {
       public companion object {
         @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-        internal fun _create(builder: protocol_buffers.Lib.LibraryUpgradeResponse.Result.Builder): Dsl = Dsl(builder)
+        internal fun _create(builder: protocol_buffers.LibraryUpgradeResponse.Result.Builder): Dsl = Dsl(builder)
       }
 
       @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-      internal fun _build(): protocol_buffers.Lib.LibraryUpgradeResponse.Result = _builder.build()
+      internal fun _build(): protocol_buffers.LibraryUpgradeResponse.Result = _builder.build()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryUpgradeResponse.copy(block: `protocol_buffers`.LibraryUpgradeResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUpgradeResponse =
+public inline fun protocol_buffers.LibraryUpgradeResponse.copy(block: `protocol_buffers`.LibraryUpgradeResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUpgradeResponse =
   `protocol_buffers`.LibraryUpgradeResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryUpgradeResponse.Result.copy(block: `protocol_buffers`.LibraryUpgradeResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUpgradeResponse.Result =
+public inline fun protocol_buffers.LibraryUpgradeResponse.Result.copy(block: `protocol_buffers`.LibraryUpgradeResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUpgradeResponse.Result =
   `protocol_buffers`.LibraryUpgradeResponseKt.ResultKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryUpgradeResponseOrBuilder.progressOrNull: protocol_buffers.Common.DownloadProgress?
+public val protocol_buffers.LibraryUpgradeResponseOrBuilder.progressOrNull: protocol_buffers.DownloadProgress?
   get() = if (hasProgress()) getProgress() else null
 
-public val protocol_buffers.Lib.LibraryUpgradeResponseOrBuilder.taskProgressOrNull: protocol_buffers.Common.TaskProgress?
+public val protocol_buffers.LibraryUpgradeResponseOrBuilder.taskProgressOrNull: protocol_buffers.TaskProgress?
   get() = if (hasTaskProgress()) getTaskProgress() else null
 
-public val protocol_buffers.Lib.LibraryUpgradeResponseOrBuilder.resultOrNull: protocol_buffers.Lib.LibraryUpgradeResponse.Result?
+public val protocol_buffers.LibraryUpgradeResponseOrBuilder.resultOrNull: protocol_buffers.LibraryUpgradeResponse.Result?
   get() = if (hasResult()) getResult() else null
 

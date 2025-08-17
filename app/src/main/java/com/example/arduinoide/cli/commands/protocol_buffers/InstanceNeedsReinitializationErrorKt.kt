@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeinstanceNeedsReinitializationError")
-public inline fun instanceNeedsReinitializationError(block: protocol_buffers.InstanceNeedsReinitializationErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.InstanceNeedsReinitializationError =
-  protocol_buffers.InstanceNeedsReinitializationErrorKt.Dsl._create(protocol_buffers.Compile.InstanceNeedsReinitializationError.newBuilder()).apply { block() }._build()
+public inline fun instanceNeedsReinitializationError(block: protocol_buffers.InstanceNeedsReinitializationErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.InstanceNeedsReinitializationError =
+  protocol_buffers.InstanceNeedsReinitializationErrorKt.Dsl._create(protocol_buffers.InstanceNeedsReinitializationError.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.InstanceNeedsReinitializationError`
  */
@@ -16,20 +16,20 @@ public object InstanceNeedsReinitializationErrorKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.InstanceNeedsReinitializationError.Builder
+    private val _builder: protocol_buffers.InstanceNeedsReinitializationError.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.InstanceNeedsReinitializationError.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.InstanceNeedsReinitializationError.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.InstanceNeedsReinitializationError = _builder.build()
+    internal fun _build(): protocol_buffers.InstanceNeedsReinitializationError = _builder.build()
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.InstanceNeedsReinitializationError.copy(block: `protocol_buffers`.InstanceNeedsReinitializationErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.InstanceNeedsReinitializationError =
+public inline fun protocol_buffers.InstanceNeedsReinitializationError.copy(block: `protocol_buffers`.InstanceNeedsReinitializationErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.InstanceNeedsReinitializationError =
   `protocol_buffers`.InstanceNeedsReinitializationErrorKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

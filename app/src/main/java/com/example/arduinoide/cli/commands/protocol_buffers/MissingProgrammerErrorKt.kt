@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializemissingProgrammerError")
-public inline fun missingProgrammerError(block: protocol_buffers.MissingProgrammerErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.MissingProgrammerError =
-  protocol_buffers.MissingProgrammerErrorKt.Dsl._create(protocol_buffers.Common.MissingProgrammerError.newBuilder()).apply { block() }._build()
+public inline fun missingProgrammerError(block: protocol_buffers.MissingProgrammerErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.MissingProgrammerError =
+  protocol_buffers.MissingProgrammerErrorKt.Dsl._create(protocol_buffers.MissingProgrammerError.newBuilder()).apply { block() }._build()
 /**
  * ```
  * MissingProgrammerError is a status error detail that is returned when
@@ -21,20 +21,20 @@ public object MissingProgrammerErrorKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.MissingProgrammerError.Builder
+    private val _builder: protocol_buffers.MissingProgrammerError.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.MissingProgrammerError.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.MissingProgrammerError.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.MissingProgrammerError = _builder.build()
+    internal fun _build(): protocol_buffers.MissingProgrammerError = _builder.build()
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.MissingProgrammerError.copy(block: `protocol_buffers`.MissingProgrammerErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.MissingProgrammerError =
+public inline fun protocol_buffers.MissingProgrammerError.copy(block: `protocol_buffers`.MissingProgrammerErrorKt.Dsl.() -> kotlin.Unit): protocol_buffers.MissingProgrammerError =
   `protocol_buffers`.MissingProgrammerErrorKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

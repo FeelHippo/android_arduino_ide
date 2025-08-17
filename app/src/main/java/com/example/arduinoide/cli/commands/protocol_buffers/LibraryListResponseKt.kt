@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryListResponse")
-public inline fun libraryListResponse(block: protocol_buffers.LibraryListResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryListResponse =
-  protocol_buffers.LibraryListResponseKt.Dsl._create(protocol_buffers.Lib.LibraryListResponse.newBuilder()).apply { block() }._build()
+public inline fun libraryListResponse(block: protocol_buffers.LibraryListResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryListResponse =
+  protocol_buffers.LibraryListResponseKt.Dsl._create(protocol_buffers.LibraryListResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryListResponse`
  */
@@ -16,17 +16,17 @@ public object LibraryListResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryListResponse.Builder
+    private val _builder: protocol_buffers.LibraryListResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryListResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryListResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryListResponse = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryListResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -41,7 +41,7 @@ public object LibraryListResponseKt {
      *
      * `repeated .protocol_buffers.InstalledLibrary installed_libraries = 1;`
      */
-     public val installedLibraries: com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.InstalledLibrary, InstalledLibrariesProxy>
+     public val installedLibraries: com.google.protobuf.kotlin.DslList<protocol_buffers.InstalledLibrary, InstalledLibrariesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.installedLibrariesList
@@ -56,7 +56,7 @@ public object LibraryListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addInstalledLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.InstalledLibrary, InstalledLibrariesProxy>.add(value: protocol_buffers.Lib.InstalledLibrary) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.InstalledLibrary, InstalledLibrariesProxy>.add(value: protocol_buffers.InstalledLibrary) {
       _builder.addInstalledLibraries(value)
     }
     /**
@@ -70,7 +70,7 @@ public object LibraryListResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignInstalledLibraries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.InstalledLibrary, InstalledLibrariesProxy>.plusAssign(value: protocol_buffers.Lib.InstalledLibrary) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.InstalledLibrary, InstalledLibrariesProxy>.plusAssign(value: protocol_buffers.InstalledLibrary) {
       add(value)
     }
     /**
@@ -83,7 +83,7 @@ public object LibraryListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllInstalledLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.InstalledLibrary, InstalledLibrariesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Lib.InstalledLibrary>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.InstalledLibrary, InstalledLibrariesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.InstalledLibrary>) {
       _builder.addAllInstalledLibraries(values)
     }
     /**
@@ -97,7 +97,7 @@ public object LibraryListResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllInstalledLibraries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.InstalledLibrary, InstalledLibrariesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Lib.InstalledLibrary>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.InstalledLibrary, InstalledLibrariesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.InstalledLibrary>) {
       addAll(values)
     }
     /**
@@ -111,7 +111,7 @@ public object LibraryListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setInstalledLibraries")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.InstalledLibrary, InstalledLibrariesProxy>.set(index: kotlin.Int, value: protocol_buffers.Lib.InstalledLibrary) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.InstalledLibrary, InstalledLibrariesProxy>.set(index: kotlin.Int, value: protocol_buffers.InstalledLibrary) {
       _builder.setInstalledLibraries(index, value)
     }
     /**
@@ -123,12 +123,12 @@ public object LibraryListResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearInstalledLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.InstalledLibrary, InstalledLibrariesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.InstalledLibrary, InstalledLibrariesProxy>.clear() {
       _builder.clearInstalledLibraries()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryListResponse.copy(block: `protocol_buffers`.LibraryListResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryListResponse =
+public inline fun protocol_buffers.LibraryListResponse.copy(block: `protocol_buffers`.LibraryListResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryListResponse =
   `protocol_buffers`.LibraryListResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

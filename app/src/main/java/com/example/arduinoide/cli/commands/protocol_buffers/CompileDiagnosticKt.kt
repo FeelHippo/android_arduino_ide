@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializecompileDiagnostic")
-public inline fun compileDiagnostic(block: protocol_buffers.CompileDiagnosticKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileDiagnostic =
-  protocol_buffers.CompileDiagnosticKt.Dsl._create(protocol_buffers.Compile.CompileDiagnostic.newBuilder()).apply { block() }._build()
+public inline fun compileDiagnostic(block: protocol_buffers.CompileDiagnosticKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileDiagnostic =
+  protocol_buffers.CompileDiagnosticKt.Dsl._create(protocol_buffers.CompileDiagnostic.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.CompileDiagnostic`
  */
@@ -16,17 +16,17 @@ public object CompileDiagnosticKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.CompileDiagnostic.Builder
+    private val _builder: protocol_buffers.CompileDiagnostic.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.CompileDiagnostic.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.CompileDiagnostic.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.CompileDiagnostic = _builder.build()
+    internal fun _build(): protocol_buffers.CompileDiagnostic = _builder.build()
 
     /**
      * ```
@@ -168,7 +168,7 @@ public object CompileDiagnosticKt {
      *
      * `repeated .protocol_buffers.CompileDiagnosticContext context = 6;`
      */
-     public val context: com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticContext, ContextProxy>
+     public val context: com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticContext, ContextProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.contextList
@@ -185,7 +185,7 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addContext")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticContext, ContextProxy>.add(value: protocol_buffers.Compile.CompileDiagnosticContext) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticContext, ContextProxy>.add(value: protocol_buffers.CompileDiagnosticContext) {
       _builder.addContext(value)
     }
     /**
@@ -201,7 +201,7 @@ public object CompileDiagnosticKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignContext")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticContext, ContextProxy>.plusAssign(value: protocol_buffers.Compile.CompileDiagnosticContext) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticContext, ContextProxy>.plusAssign(value: protocol_buffers.CompileDiagnosticContext) {
       add(value)
     }
     /**
@@ -216,7 +216,7 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllContext")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticContext, ContextProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Compile.CompileDiagnosticContext>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticContext, ContextProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.CompileDiagnosticContext>) {
       _builder.addAllContext(values)
     }
     /**
@@ -232,7 +232,7 @@ public object CompileDiagnosticKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllContext")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticContext, ContextProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Compile.CompileDiagnosticContext>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticContext, ContextProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.CompileDiagnosticContext>) {
       addAll(values)
     }
     /**
@@ -248,7 +248,7 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setContext")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticContext, ContextProxy>.set(index: kotlin.Int, value: protocol_buffers.Compile.CompileDiagnosticContext) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticContext, ContextProxy>.set(index: kotlin.Int, value: protocol_buffers.CompileDiagnosticContext) {
       _builder.setContext(index, value)
     }
     /**
@@ -262,7 +262,7 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearContext")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticContext, ContextProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticContext, ContextProxy>.clear() {
       _builder.clearContext()
     }
 
@@ -279,7 +279,7 @@ public object CompileDiagnosticKt {
      *
      * `repeated .protocol_buffers.CompileDiagnosticNote notes = 7;`
      */
-     public val notes: com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticNote, NotesProxy>
+     public val notes: com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticNote, NotesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.notesList
@@ -294,7 +294,7 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addNotes")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticNote, NotesProxy>.add(value: protocol_buffers.Compile.CompileDiagnosticNote) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticNote, NotesProxy>.add(value: protocol_buffers.CompileDiagnosticNote) {
       _builder.addNotes(value)
     }
     /**
@@ -308,7 +308,7 @@ public object CompileDiagnosticKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignNotes")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticNote, NotesProxy>.plusAssign(value: protocol_buffers.Compile.CompileDiagnosticNote) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticNote, NotesProxy>.plusAssign(value: protocol_buffers.CompileDiagnosticNote) {
       add(value)
     }
     /**
@@ -321,7 +321,7 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllNotes")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticNote, NotesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Compile.CompileDiagnosticNote>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticNote, NotesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.CompileDiagnosticNote>) {
       _builder.addAllNotes(values)
     }
     /**
@@ -335,7 +335,7 @@ public object CompileDiagnosticKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllNotes")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticNote, NotesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Compile.CompileDiagnosticNote>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticNote, NotesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.CompileDiagnosticNote>) {
       addAll(values)
     }
     /**
@@ -349,7 +349,7 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setNotes")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticNote, NotesProxy>.set(index: kotlin.Int, value: protocol_buffers.Compile.CompileDiagnosticNote) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticNote, NotesProxy>.set(index: kotlin.Int, value: protocol_buffers.CompileDiagnosticNote) {
       _builder.setNotes(index, value)
     }
     /**
@@ -361,12 +361,12 @@ public object CompileDiagnosticKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearNotes")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnosticNote, NotesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnosticNote, NotesProxy>.clear() {
       _builder.clearNotes()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.CompileDiagnostic.copy(block: `protocol_buffers`.CompileDiagnosticKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileDiagnostic =
+public inline fun protocol_buffers.CompileDiagnostic.copy(block: `protocol_buffers`.CompileDiagnosticKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileDiagnostic =
   `protocol_buffers`.CompileDiagnosticKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

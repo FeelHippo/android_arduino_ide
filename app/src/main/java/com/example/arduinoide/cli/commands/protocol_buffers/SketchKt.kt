@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializesketch")
-public inline fun sketch(block: protocol_buffers.SketchKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Sketch =
-  protocol_buffers.SketchKt.Dsl._create(protocol_buffers.Common.Sketch.newBuilder()).apply { block() }._build()
+public inline fun sketch(block: protocol_buffers.SketchKt.Dsl.() -> kotlin.Unit): protocol_buffers.Sketch =
+  protocol_buffers.SketchKt.Dsl._create(protocol_buffers.Sketch.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.Sketch`
  */
@@ -16,17 +16,17 @@ public object SketchKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.Sketch.Builder
+    private val _builder: protocol_buffers.Sketch.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.Sketch.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.Sketch.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.Sketch = _builder.build()
+    internal fun _build(): protocol_buffers.Sketch = _builder.build()
 
     /**
      * ```
@@ -467,7 +467,7 @@ public object SketchKt {
      *
      * `repeated .protocol_buffers.SketchProfile profiles = 9;`
      */
-     public val profiles: com.google.protobuf.kotlin.DslList<protocol_buffers.Common.SketchProfile, ProfilesProxy>
+     public val profiles: com.google.protobuf.kotlin.DslList<protocol_buffers.SketchProfile, ProfilesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.profilesList
@@ -482,7 +482,7 @@ public object SketchKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addProfiles")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.SketchProfile, ProfilesProxy>.add(value: protocol_buffers.Common.SketchProfile) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.SketchProfile, ProfilesProxy>.add(value: protocol_buffers.SketchProfile) {
       _builder.addProfiles(value)
     }
     /**
@@ -496,7 +496,7 @@ public object SketchKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignProfiles")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.SketchProfile, ProfilesProxy>.plusAssign(value: protocol_buffers.Common.SketchProfile) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.SketchProfile, ProfilesProxy>.plusAssign(value: protocol_buffers.SketchProfile) {
       add(value)
     }
     /**
@@ -509,7 +509,7 @@ public object SketchKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllProfiles")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.SketchProfile, ProfilesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Common.SketchProfile>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.SketchProfile, ProfilesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.SketchProfile>) {
       _builder.addAllProfiles(values)
     }
     /**
@@ -523,7 +523,7 @@ public object SketchKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllProfiles")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.SketchProfile, ProfilesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Common.SketchProfile>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.SketchProfile, ProfilesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.SketchProfile>) {
       addAll(values)
     }
     /**
@@ -537,7 +537,7 @@ public object SketchKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setProfiles")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.SketchProfile, ProfilesProxy>.set(index: kotlin.Int, value: protocol_buffers.Common.SketchProfile) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.SketchProfile, ProfilesProxy>.set(index: kotlin.Int, value: protocol_buffers.SketchProfile) {
       _builder.setProfiles(index, value)
     }
     /**
@@ -549,7 +549,7 @@ public object SketchKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearProfiles")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.SketchProfile, ProfilesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.SketchProfile, ProfilesProxy>.clear() {
       _builder.clearProfiles()
     }
 
@@ -560,7 +560,7 @@ public object SketchKt {
      *
      * `.protocol_buffers.SketchProfile default_profile = 10;`
      */
-    public var defaultProfile: protocol_buffers.Common.SketchProfile
+    public var defaultProfile: protocol_buffers.SketchProfile
       @kotlin.jvm.JvmName("getDefaultProfile")
         get() = _builder.defaultProfile
       @kotlin.jvm.JvmName("setDefaultProfile")
@@ -589,7 +589,7 @@ public object SketchKt {
       return _builder.hasDefaultProfile()
     }
 
-    public val SketchKt.Dsl.defaultProfileOrNull: protocol_buffers.Common.SketchProfile?
+    public val SketchKt.Dsl.defaultProfileOrNull: protocol_buffers.SketchProfile?
       get() = _builder.defaultProfileOrNull
 
     /**
@@ -624,7 +624,7 @@ public object SketchKt {
      *
      * `.protocol_buffers.MonitorPortConfiguration default_port_config = 12;`
      */
-    public var defaultPortConfig: protocol_buffers.Common.MonitorPortConfiguration
+    public var defaultPortConfig: protocol_buffers.MonitorPortConfiguration
       @kotlin.jvm.JvmName("getDefaultPortConfig")
         get() = _builder.defaultPortConfig
       @kotlin.jvm.JvmName("setDefaultPortConfig")
@@ -653,17 +653,17 @@ public object SketchKt {
       return _builder.hasDefaultPortConfig()
     }
 
-    public val SketchKt.Dsl.defaultPortConfigOrNull: protocol_buffers.Common.MonitorPortConfiguration?
+    public val SketchKt.Dsl.defaultPortConfigOrNull: protocol_buffers.MonitorPortConfiguration?
       get() = _builder.defaultPortConfigOrNull
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.Sketch.copy(block: `protocol_buffers`.SketchKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Sketch =
+public inline fun protocol_buffers.Sketch.copy(block: `protocol_buffers`.SketchKt.Dsl.() -> kotlin.Unit): protocol_buffers.Sketch =
   `protocol_buffers`.SketchKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Common.SketchOrBuilder.defaultProfileOrNull: protocol_buffers.Common.SketchProfile?
+public val protocol_buffers.SketchOrBuilder.defaultProfileOrNull: protocol_buffers.SketchProfile?
   get() = if (hasDefaultProfile()) getDefaultProfile() else null
 
-public val protocol_buffers.Common.SketchOrBuilder.defaultPortConfigOrNull: protocol_buffers.Common.MonitorPortConfiguration?
+public val protocol_buffers.SketchOrBuilder.defaultPortConfigOrNull: protocol_buffers.MonitorPortConfiguration?
   get() = if (hasDefaultPortConfig()) getDefaultPortConfig() else null
 

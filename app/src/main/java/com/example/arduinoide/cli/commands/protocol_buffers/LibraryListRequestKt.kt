@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryListRequest")
-public inline fun libraryListRequest(block: protocol_buffers.LibraryListRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryListRequest =
-  protocol_buffers.LibraryListRequestKt.Dsl._create(protocol_buffers.Lib.LibraryListRequest.newBuilder()).apply { block() }._build()
+public inline fun libraryListRequest(block: protocol_buffers.LibraryListRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryListRequest =
+  protocol_buffers.LibraryListRequestKt.Dsl._create(protocol_buffers.LibraryListRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryListRequest`
  */
@@ -16,17 +16,17 @@ public object LibraryListRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryListRequest.Builder
+    private val _builder: protocol_buffers.LibraryListRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryListRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryListRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryListRequest = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryListRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryListRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object LibraryListRequestKt {
       return _builder.hasInstance()
     }
 
-    public val LibraryListRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val LibraryListRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -177,9 +177,9 @@ public object LibraryListRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryListRequest.copy(block: `protocol_buffers`.LibraryListRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryListRequest =
+public inline fun protocol_buffers.LibraryListRequest.copy(block: `protocol_buffers`.LibraryListRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryListRequest =
   `protocol_buffers`.LibraryListRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryListRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.LibraryListRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

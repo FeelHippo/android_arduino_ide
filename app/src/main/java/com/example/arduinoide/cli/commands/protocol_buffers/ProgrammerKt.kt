@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeprogrammer")
-public inline fun programmer(block: protocol_buffers.ProgrammerKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Programmer =
-  protocol_buffers.ProgrammerKt.Dsl._create(protocol_buffers.Common.Programmer.newBuilder()).apply { block() }._build()
+public inline fun programmer(block: protocol_buffers.ProgrammerKt.Dsl.() -> kotlin.Unit): protocol_buffers.Programmer =
+  protocol_buffers.ProgrammerKt.Dsl._create(protocol_buffers.Programmer.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.Programmer`
  */
@@ -16,17 +16,17 @@ public object ProgrammerKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.Programmer.Builder
+    private val _builder: protocol_buffers.Programmer.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.Programmer.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.Programmer.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.Programmer = _builder.build()
+    internal fun _build(): protocol_buffers.Programmer = _builder.build()
 
     /**
      * ```
@@ -105,6 +105,6 @@ public object ProgrammerKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.Programmer.copy(block: `protocol_buffers`.ProgrammerKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Programmer =
+public inline fun protocol_buffers.Programmer.copy(block: `protocol_buffers`.ProgrammerKt.Dsl.() -> kotlin.Unit): protocol_buffers.Programmer =
   `protocol_buffers`.ProgrammerKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

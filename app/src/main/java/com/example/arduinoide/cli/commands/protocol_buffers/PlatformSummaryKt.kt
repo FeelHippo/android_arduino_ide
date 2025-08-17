@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeplatformSummary")
-public inline fun platformSummary(block: protocol_buffers.PlatformSummaryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.PlatformSummary =
-  protocol_buffers.PlatformSummaryKt.Dsl._create(protocol_buffers.Common.PlatformSummary.newBuilder()).apply { block() }._build()
+public inline fun platformSummary(block: protocol_buffers.PlatformSummaryKt.Dsl.() -> kotlin.Unit): protocol_buffers.PlatformSummary =
+  protocol_buffers.PlatformSummaryKt.Dsl._create(protocol_buffers.PlatformSummary.newBuilder()).apply { block() }._build()
 /**
  * ```
  * PlatformSummary is a structure containing all the information about
@@ -21,17 +21,17 @@ public object PlatformSummaryKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.PlatformSummary.Builder
+    private val _builder: protocol_buffers.PlatformSummary.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.PlatformSummary.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.PlatformSummary.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.PlatformSummary = _builder.build()
+    internal fun _build(): protocol_buffers.PlatformSummary = _builder.build()
 
     /**
      * ```
@@ -40,7 +40,7 @@ public object PlatformSummaryKt {
      *
      * `.protocol_buffers.PlatformMetadata metadata = 1;`
      */
-    public var metadata: protocol_buffers.Common.PlatformMetadata
+    public var metadata: protocol_buffers.PlatformMetadata
       @kotlin.jvm.JvmName("getMetadata")
         get() = _builder.metadata
       @kotlin.jvm.JvmName("setMetadata")
@@ -69,7 +69,7 @@ public object PlatformSummaryKt {
       return _builder.hasMetadata()
     }
 
-    public val PlatformSummaryKt.Dsl.metadataOrNull: protocol_buffers.Common.PlatformMetadata?
+    public val PlatformSummaryKt.Dsl.metadataOrNull: protocol_buffers.PlatformMetadata?
       get() = _builder.metadataOrNull
 
     /**
@@ -85,7 +85,7 @@ public object PlatformSummaryKt {
      *
      * `map<string, .protocol_buffers.PlatformRelease> releases = 2;`
      */
-     public val releases: com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Common.PlatformRelease, ReleasesProxy>
+     public val releases: com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.PlatformRelease, ReleasesProxy>
       @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("getReleasesMap")
       get() = com.google.protobuf.kotlin.DslMap(
@@ -99,8 +99,8 @@ public object PlatformSummaryKt {
      * `map<string, .protocol_buffers.PlatformRelease> releases = 2;`
      */
     @kotlin.jvm.JvmName("putReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Common.PlatformRelease, ReleasesProxy>
-      .put(key: kotlin.String, value: protocol_buffers.Common.PlatformRelease) {
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.PlatformRelease, ReleasesProxy>
+      .put(key: kotlin.String, value: protocol_buffers.PlatformRelease) {
          _builder.putReleases(key, value)
        }
     /**
@@ -113,8 +113,8 @@ public object PlatformSummaryKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setReleases")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Common.PlatformRelease, ReleasesProxy>
-      .set(key: kotlin.String, value: protocol_buffers.Common.PlatformRelease) {
+    public inline operator fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.PlatformRelease, ReleasesProxy>
+      .set(key: kotlin.String, value: protocol_buffers.PlatformRelease) {
          put(key, value)
        }
     /**
@@ -126,7 +126,7 @@ public object PlatformSummaryKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("removeReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Common.PlatformRelease, ReleasesProxy>
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.PlatformRelease, ReleasesProxy>
       .remove(key: kotlin.String) {
          _builder.removeReleases(key)
        }
@@ -139,8 +139,8 @@ public object PlatformSummaryKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("putAllReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Common.PlatformRelease, ReleasesProxy>
-      .putAll(map: kotlin.collections.Map<kotlin.String, protocol_buffers.Common.PlatformRelease>) {
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.PlatformRelease, ReleasesProxy>
+      .putAll(map: kotlin.collections.Map<kotlin.String, protocol_buffers.PlatformRelease>) {
          _builder.putAllReleases(map)
        }
     /**
@@ -152,7 +152,7 @@ public object PlatformSummaryKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Common.PlatformRelease, ReleasesProxy>
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.PlatformRelease, ReleasesProxy>
       .clear() {
          _builder.clearReleases()
        }
@@ -211,9 +211,9 @@ public object PlatformSummaryKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.PlatformSummary.copy(block: `protocol_buffers`.PlatformSummaryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.PlatformSummary =
+public inline fun protocol_buffers.PlatformSummary.copy(block: `protocol_buffers`.PlatformSummaryKt.Dsl.() -> kotlin.Unit): protocol_buffers.PlatformSummary =
   `protocol_buffers`.PlatformSummaryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Common.PlatformSummaryOrBuilder.metadataOrNull: protocol_buffers.Common.PlatformMetadata?
+public val protocol_buffers.PlatformSummaryOrBuilder.metadataOrNull: protocol_buffers.PlatformMetadata?
   get() = if (hasMetadata()) getMetadata() else null
 

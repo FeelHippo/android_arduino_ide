@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializesearchedLibrary")
-public inline fun searchedLibrary(block: protocol_buffers.SearchedLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.SearchedLibrary =
-  protocol_buffers.SearchedLibraryKt.Dsl._create(protocol_buffers.Lib.SearchedLibrary.newBuilder()).apply { block() }._build()
+public inline fun searchedLibrary(block: protocol_buffers.SearchedLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.SearchedLibrary =
+  protocol_buffers.SearchedLibraryKt.Dsl._create(protocol_buffers.SearchedLibrary.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.SearchedLibrary`
  */
@@ -16,17 +16,17 @@ public object SearchedLibraryKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.SearchedLibrary.Builder
+    private val _builder: protocol_buffers.SearchedLibrary.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.SearchedLibrary.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.SearchedLibrary.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.SearchedLibrary = _builder.build()
+    internal fun _build(): protocol_buffers.SearchedLibrary = _builder.build()
 
     /**
      * ```
@@ -67,7 +67,7 @@ public object SearchedLibraryKt {
      *
      * `map<string, .protocol_buffers.LibraryRelease> releases = 2;`
      */
-     public val releases: com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Lib.LibraryRelease, ReleasesProxy>
+     public val releases: com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.LibraryRelease, ReleasesProxy>
       @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("getReleasesMap")
       get() = com.google.protobuf.kotlin.DslMap(
@@ -82,8 +82,8 @@ public object SearchedLibraryKt {
      * `map<string, .protocol_buffers.LibraryRelease> releases = 2;`
      */
     @kotlin.jvm.JvmName("putReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Lib.LibraryRelease, ReleasesProxy>
-      .put(key: kotlin.String, value: protocol_buffers.Lib.LibraryRelease) {
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.LibraryRelease, ReleasesProxy>
+      .put(key: kotlin.String, value: protocol_buffers.LibraryRelease) {
          _builder.putReleases(key, value)
        }
     /**
@@ -97,8 +97,8 @@ public object SearchedLibraryKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setReleases")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Lib.LibraryRelease, ReleasesProxy>
-      .set(key: kotlin.String, value: protocol_buffers.Lib.LibraryRelease) {
+    public inline operator fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.LibraryRelease, ReleasesProxy>
+      .set(key: kotlin.String, value: protocol_buffers.LibraryRelease) {
          put(key, value)
        }
     /**
@@ -111,7 +111,7 @@ public object SearchedLibraryKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("removeReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Lib.LibraryRelease, ReleasesProxy>
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.LibraryRelease, ReleasesProxy>
       .remove(key: kotlin.String) {
          _builder.removeReleases(key)
        }
@@ -125,8 +125,8 @@ public object SearchedLibraryKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("putAllReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Lib.LibraryRelease, ReleasesProxy>
-      .putAll(map: kotlin.collections.Map<kotlin.String, protocol_buffers.Lib.LibraryRelease>) {
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.LibraryRelease, ReleasesProxy>
+      .putAll(map: kotlin.collections.Map<kotlin.String, protocol_buffers.LibraryRelease>) {
          _builder.putAllReleases(map)
        }
     /**
@@ -139,7 +139,7 @@ public object SearchedLibraryKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearReleases")
-    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.Lib.LibraryRelease, ReleasesProxy>
+    public fun com.google.protobuf.kotlin.DslMap<kotlin.String, protocol_buffers.LibraryRelease, ReleasesProxy>
       .clear() {
          _builder.clearReleases()
        }
@@ -151,7 +151,7 @@ public object SearchedLibraryKt {
      *
      * `.protocol_buffers.LibraryRelease latest = 3;`
      */
-    public var latest: protocol_buffers.Lib.LibraryRelease
+    public var latest: protocol_buffers.LibraryRelease
       @kotlin.jvm.JvmName("getLatest")
         get() = _builder.latest
       @kotlin.jvm.JvmName("setLatest")
@@ -180,7 +180,7 @@ public object SearchedLibraryKt {
       return _builder.hasLatest()
     }
 
-    public val SearchedLibraryKt.Dsl.latestOrNull: protocol_buffers.Lib.LibraryRelease?
+    public val SearchedLibraryKt.Dsl.latestOrNull: protocol_buffers.LibraryRelease?
       get() = _builder.latestOrNull
 
     /**
@@ -283,9 +283,9 @@ public object SearchedLibraryKt {
     }}
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.SearchedLibrary.copy(block: `protocol_buffers`.SearchedLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.SearchedLibrary =
+public inline fun protocol_buffers.SearchedLibrary.copy(block: `protocol_buffers`.SearchedLibraryKt.Dsl.() -> kotlin.Unit): protocol_buffers.SearchedLibrary =
   `protocol_buffers`.SearchedLibraryKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.SearchedLibraryOrBuilder.latestOrNull: protocol_buffers.Lib.LibraryRelease?
+public val protocol_buffers.SearchedLibraryOrBuilder.latestOrNull: protocol_buffers.LibraryRelease?
   get() = if (hasLatest()) getLatest() else null
 

@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeplatformRelease")
-public inline fun platformRelease(block: protocol_buffers.PlatformReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.PlatformRelease =
-  protocol_buffers.PlatformReleaseKt.Dsl._create(protocol_buffers.Common.PlatformRelease.newBuilder()).apply { block() }._build()
+public inline fun platformRelease(block: protocol_buffers.PlatformReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.PlatformRelease =
+  protocol_buffers.PlatformReleaseKt.Dsl._create(protocol_buffers.PlatformRelease.newBuilder()).apply { block() }._build()
 /**
  * ```
  * PlatformRelease contains information about a specific release of a platform.
@@ -20,17 +20,17 @@ public object PlatformReleaseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.PlatformRelease.Builder
+    private val _builder: protocol_buffers.PlatformRelease.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.PlatformRelease.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.PlatformRelease.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.PlatformRelease = _builder.build()
+    internal fun _build(): protocol_buffers.PlatformRelease = _builder.build()
 
     /**
      * ```
@@ -221,7 +221,7 @@ public object PlatformReleaseKt {
      *
      * `repeated .protocol_buffers.Board boards = 5;`
      */
-     public val boards: com.google.protobuf.kotlin.DslList<protocol_buffers.Common.Board, BoardsProxy>
+     public val boards: com.google.protobuf.kotlin.DslList<protocol_buffers.Board, BoardsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.boardsList
@@ -239,7 +239,7 @@ public object PlatformReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addBoards")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.Board, BoardsProxy>.add(value: protocol_buffers.Common.Board) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Board, BoardsProxy>.add(value: protocol_buffers.Board) {
       _builder.addBoards(value)
     }
     /**
@@ -256,7 +256,7 @@ public object PlatformReleaseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignBoards")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.Board, BoardsProxy>.plusAssign(value: protocol_buffers.Common.Board) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Board, BoardsProxy>.plusAssign(value: protocol_buffers.Board) {
       add(value)
     }
     /**
@@ -272,7 +272,7 @@ public object PlatformReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllBoards")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.Board, BoardsProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Common.Board>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Board, BoardsProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Board>) {
       _builder.addAllBoards(values)
     }
     /**
@@ -289,7 +289,7 @@ public object PlatformReleaseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllBoards")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.Board, BoardsProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Common.Board>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Board, BoardsProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Board>) {
       addAll(values)
     }
     /**
@@ -306,7 +306,7 @@ public object PlatformReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setBoards")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.Board, BoardsProxy>.set(index: kotlin.Int, value: protocol_buffers.Common.Board) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Board, BoardsProxy>.set(index: kotlin.Int, value: protocol_buffers.Board) {
       _builder.setBoards(index, value)
     }
     /**
@@ -321,7 +321,7 @@ public object PlatformReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearBoards")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.Board, BoardsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Board, BoardsProxy>.clear() {
       _builder.clearBoards()
     }
 
@@ -333,7 +333,7 @@ public object PlatformReleaseKt {
      *
      * `.protocol_buffers.HelpResources help = 6;`
      */
-    public var help: protocol_buffers.Common.HelpResources
+    public var help: protocol_buffers.HelpResources
       @kotlin.jvm.JvmName("getHelp")
         get() = _builder.help
       @kotlin.jvm.JvmName("setHelp")
@@ -364,7 +364,7 @@ public object PlatformReleaseKt {
       return _builder.hasHelp()
     }
 
-    public val PlatformReleaseKt.Dsl.helpOrNull: protocol_buffers.Common.HelpResources?
+    public val PlatformReleaseKt.Dsl.helpOrNull: protocol_buffers.HelpResources?
       get() = _builder.helpOrNull
 
     /**
@@ -456,9 +456,9 @@ public object PlatformReleaseKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.PlatformRelease.copy(block: `protocol_buffers`.PlatformReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.PlatformRelease =
+public inline fun protocol_buffers.PlatformRelease.copy(block: `protocol_buffers`.PlatformReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.PlatformRelease =
   `protocol_buffers`.PlatformReleaseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Common.PlatformReleaseOrBuilder.helpOrNull: protocol_buffers.Common.HelpResources?
+public val protocol_buffers.PlatformReleaseOrBuilder.helpOrNull: protocol_buffers.HelpResources?
   get() = if (hasHelp()) getHelp() else null
 

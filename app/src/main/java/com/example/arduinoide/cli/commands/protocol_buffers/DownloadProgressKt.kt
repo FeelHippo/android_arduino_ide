@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializedownloadProgress")
-public inline fun downloadProgress(block: protocol_buffers.DownloadProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.DownloadProgress =
-  protocol_buffers.DownloadProgressKt.Dsl._create(protocol_buffers.Common.DownloadProgress.newBuilder()).apply { block() }._build()
+public inline fun downloadProgress(block: protocol_buffers.DownloadProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadProgress =
+  protocol_buffers.DownloadProgressKt.Dsl._create(protocol_buffers.DownloadProgress.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.DownloadProgress`
  */
@@ -16,17 +16,17 @@ public object DownloadProgressKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.DownloadProgress.Builder
+    private val _builder: protocol_buffers.DownloadProgress.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.DownloadProgress.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.DownloadProgress.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.DownloadProgress = _builder.build()
+    internal fun _build(): protocol_buffers.DownloadProgress = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object DownloadProgressKt {
      *
      * `.protocol_buffers.DownloadProgressStart start = 1;`
      */
-    public var start: protocol_buffers.Common.DownloadProgressStart
+    public var start: protocol_buffers.DownloadProgressStart
       @kotlin.jvm.JvmName("getStart")
         get() = _builder.start
       @kotlin.jvm.JvmName("setStart")
@@ -71,7 +71,7 @@ public object DownloadProgressKt {
      *
      * `.protocol_buffers.DownloadProgressUpdate update = 2;`
      */
-    public var update: protocol_buffers.Common.DownloadProgressUpdate
+    public var update: protocol_buffers.DownloadProgressUpdate
       @kotlin.jvm.JvmName("getUpdate")
         get() = _builder.update
       @kotlin.jvm.JvmName("setUpdate")
@@ -107,7 +107,7 @@ public object DownloadProgressKt {
      *
      * `.protocol_buffers.DownloadProgressEnd end = 3;`
      */
-    public var end: protocol_buffers.Common.DownloadProgressEnd
+    public var end: protocol_buffers.DownloadProgressEnd
       @kotlin.jvm.JvmName("getEnd")
         get() = _builder.end
       @kotlin.jvm.JvmName("setEnd")
@@ -135,7 +135,7 @@ public object DownloadProgressKt {
     public fun hasEnd(): kotlin.Boolean {
       return _builder.hasEnd()
     }
-    public val messageCase: protocol_buffers.Common.DownloadProgress.MessageCase
+    public val messageCase: protocol_buffers.DownloadProgress.MessageCase
     @kotlin.jvm.JvmName("getMessageCase")
       get() = _builder.getMessageCase()
 
@@ -145,15 +145,15 @@ public object DownloadProgressKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.DownloadProgress.copy(block: `protocol_buffers`.DownloadProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.DownloadProgress =
+public inline fun protocol_buffers.DownloadProgress.copy(block: `protocol_buffers`.DownloadProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadProgress =
   `protocol_buffers`.DownloadProgressKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Common.DownloadProgressOrBuilder.startOrNull: protocol_buffers.Common.DownloadProgressStart?
+public val protocol_buffers.DownloadProgressOrBuilder.startOrNull: protocol_buffers.DownloadProgressStart?
   get() = if (hasStart()) getStart() else null
 
-public val protocol_buffers.Common.DownloadProgressOrBuilder.updateOrNull: protocol_buffers.Common.DownloadProgressUpdate?
+public val protocol_buffers.DownloadProgressOrBuilder.updateOrNull: protocol_buffers.DownloadProgressUpdate?
   get() = if (hasUpdate()) getUpdate() else null
 
-public val protocol_buffers.Common.DownloadProgressOrBuilder.endOrNull: protocol_buffers.Common.DownloadProgressEnd?
+public val protocol_buffers.DownloadProgressOrBuilder.endOrNull: protocol_buffers.DownloadProgressEnd?
   get() = if (hasEnd()) getEnd() else null
 

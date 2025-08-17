@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializezipLibraryInstallResponse")
-public inline fun zipLibraryInstallResponse(block: protocol_buffers.ZipLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.ZipLibraryInstallResponse =
-  protocol_buffers.ZipLibraryInstallResponseKt.Dsl._create(protocol_buffers.Lib.ZipLibraryInstallResponse.newBuilder()).apply { block() }._build()
+public inline fun zipLibraryInstallResponse(block: protocol_buffers.ZipLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.ZipLibraryInstallResponse =
+  protocol_buffers.ZipLibraryInstallResponseKt.Dsl._create(protocol_buffers.ZipLibraryInstallResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.ZipLibraryInstallResponse`
  */
@@ -16,17 +16,17 @@ public object ZipLibraryInstallResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.ZipLibraryInstallResponse.Builder
+    private val _builder: protocol_buffers.ZipLibraryInstallResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.ZipLibraryInstallResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.ZipLibraryInstallResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.ZipLibraryInstallResponse = _builder.build()
+    internal fun _build(): protocol_buffers.ZipLibraryInstallResponse = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object ZipLibraryInstallResponseKt {
      *
      * `.protocol_buffers.TaskProgress task_progress = 1;`
      */
-    public var taskProgress: protocol_buffers.Common.TaskProgress
+    public var taskProgress: protocol_buffers.TaskProgress
       @kotlin.jvm.JvmName("getTaskProgress")
         get() = _builder.taskProgress
       @kotlin.jvm.JvmName("setTaskProgress")
@@ -71,7 +71,7 @@ public object ZipLibraryInstallResponseKt {
      *
      * `.protocol_buffers.ZipLibraryInstallResponse.Result result = 2;`
      */
-    public var result: protocol_buffers.Lib.ZipLibraryInstallResponse.Result
+    public var result: protocol_buffers.ZipLibraryInstallResponse.Result
       @kotlin.jvm.JvmName("getResult")
         get() = _builder.result
       @kotlin.jvm.JvmName("setResult")
@@ -99,7 +99,7 @@ public object ZipLibraryInstallResponseKt {
     public fun hasResult(): kotlin.Boolean {
       return _builder.hasResult()
     }
-    public val messageCase: protocol_buffers.Lib.ZipLibraryInstallResponse.MessageCase
+    public val messageCase: protocol_buffers.ZipLibraryInstallResponse.MessageCase
     @kotlin.jvm.JvmName("getMessageCase")
       get() = _builder.getMessageCase()
 
@@ -108,8 +108,8 @@ public object ZipLibraryInstallResponseKt {
     }
   }
   @kotlin.jvm.JvmName("-initializeresult")
-  public inline fun result(block: protocol_buffers.ZipLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.ZipLibraryInstallResponse.Result =
-    protocol_buffers.ZipLibraryInstallResponseKt.ResultKt.Dsl._create(protocol_buffers.Lib.ZipLibraryInstallResponse.Result.newBuilder()).apply { block() }._build()
+  public inline fun result(block: protocol_buffers.ZipLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.ZipLibraryInstallResponse.Result =
+    protocol_buffers.ZipLibraryInstallResponseKt.ResultKt.Dsl._create(protocol_buffers.ZipLibraryInstallResponse.Result.newBuilder()).apply { block() }._build()
   /**
    * ```
    * Empty message, reserved for future expansion.
@@ -121,31 +121,31 @@ public object ZipLibraryInstallResponseKt {
     @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
     @com.google.protobuf.kotlin.ProtoDslMarker
     public class Dsl private constructor(
-      private val _builder: protocol_buffers.Lib.ZipLibraryInstallResponse.Result.Builder
+      private val _builder: protocol_buffers.ZipLibraryInstallResponse.Result.Builder
     ) {
       public companion object {
         @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-        internal fun _create(builder: protocol_buffers.Lib.ZipLibraryInstallResponse.Result.Builder): Dsl = Dsl(builder)
+        internal fun _create(builder: protocol_buffers.ZipLibraryInstallResponse.Result.Builder): Dsl = Dsl(builder)
       }
 
       @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-      internal fun _build(): protocol_buffers.Lib.ZipLibraryInstallResponse.Result = _builder.build()
+      internal fun _build(): protocol_buffers.ZipLibraryInstallResponse.Result = _builder.build()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.ZipLibraryInstallResponse.copy(block: `protocol_buffers`.ZipLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.ZipLibraryInstallResponse =
+public inline fun protocol_buffers.ZipLibraryInstallResponse.copy(block: `protocol_buffers`.ZipLibraryInstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.ZipLibraryInstallResponse =
   `protocol_buffers`.ZipLibraryInstallResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.ZipLibraryInstallResponse.Result.copy(block: `protocol_buffers`.ZipLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.ZipLibraryInstallResponse.Result =
+public inline fun protocol_buffers.ZipLibraryInstallResponse.Result.copy(block: `protocol_buffers`.ZipLibraryInstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.ZipLibraryInstallResponse.Result =
   `protocol_buffers`.ZipLibraryInstallResponseKt.ResultKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.ZipLibraryInstallResponseOrBuilder.taskProgressOrNull: protocol_buffers.Common.TaskProgress?
+public val protocol_buffers.ZipLibraryInstallResponseOrBuilder.taskProgressOrNull: protocol_buffers.TaskProgress?
   get() = if (hasTaskProgress()) getTaskProgress() else null
 
-public val protocol_buffers.Lib.ZipLibraryInstallResponseOrBuilder.resultOrNull: protocol_buffers.Lib.ZipLibraryInstallResponse.Result?
+public val protocol_buffers.ZipLibraryInstallResponseOrBuilder.resultOrNull: protocol_buffers.ZipLibraryInstallResponse.Result?
   get() = if (hasResult()) getResult() else null
 

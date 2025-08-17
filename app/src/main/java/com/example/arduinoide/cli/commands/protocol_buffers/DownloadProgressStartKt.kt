@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializedownloadProgressStart")
-public inline fun downloadProgressStart(block: protocol_buffers.DownloadProgressStartKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.DownloadProgressStart =
-  protocol_buffers.DownloadProgressStartKt.Dsl._create(protocol_buffers.Common.DownloadProgressStart.newBuilder()).apply { block() }._build()
+public inline fun downloadProgressStart(block: protocol_buffers.DownloadProgressStartKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadProgressStart =
+  protocol_buffers.DownloadProgressStartKt.Dsl._create(protocol_buffers.DownloadProgressStart.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.DownloadProgressStart`
  */
@@ -16,17 +16,17 @@ public object DownloadProgressStartKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.DownloadProgressStart.Builder
+    private val _builder: protocol_buffers.DownloadProgressStart.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.DownloadProgressStart.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.DownloadProgressStart.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.DownloadProgressStart = _builder.build()
+    internal fun _build(): protocol_buffers.DownloadProgressStart = _builder.build()
 
     /**
      * ```
@@ -80,6 +80,6 @@ public object DownloadProgressStartKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.DownloadProgressStart.copy(block: `protocol_buffers`.DownloadProgressStartKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.DownloadProgressStart =
+public inline fun protocol_buffers.DownloadProgressStart.copy(block: `protocol_buffers`.DownloadProgressStartKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadProgressStart =
   `protocol_buffers`.DownloadProgressStartKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

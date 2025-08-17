@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryRelease")
-public inline fun libraryRelease(block: protocol_buffers.LibraryReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryRelease =
-  protocol_buffers.LibraryReleaseKt.Dsl._create(protocol_buffers.Lib.LibraryRelease.newBuilder()).apply { block() }._build()
+public inline fun libraryRelease(block: protocol_buffers.LibraryReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryRelease =
+  protocol_buffers.LibraryReleaseKt.Dsl._create(protocol_buffers.LibraryRelease.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryRelease`
  */
@@ -16,17 +16,17 @@ public object LibraryReleaseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryRelease.Builder
+    private val _builder: protocol_buffers.LibraryRelease.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryRelease.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryRelease.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryRelease = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryRelease = _builder.build()
 
     /**
      * ```
@@ -420,7 +420,7 @@ public object LibraryReleaseKt {
      *
      * `.protocol_buffers.DownloadResource resources = 10;`
      */
-    public var resources: protocol_buffers.Lib.DownloadResource
+    public var resources: protocol_buffers.DownloadResource
       @kotlin.jvm.JvmName("getResources")
         get() = _builder.resources
       @kotlin.jvm.JvmName("setResources")
@@ -449,7 +449,7 @@ public object LibraryReleaseKt {
       return _builder.hasResources()
     }
 
-    public val LibraryReleaseKt.Dsl.resourcesOrNull: protocol_buffers.Lib.DownloadResource?
+    public val LibraryReleaseKt.Dsl.resourcesOrNull: protocol_buffers.DownloadResource?
       get() = _builder.resourcesOrNull
 
     /**
@@ -589,7 +589,7 @@ public object LibraryReleaseKt {
      *
      * `repeated .protocol_buffers.LibraryDependency dependencies = 13;`
      */
-     public val dependencies: com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependency, DependenciesProxy>
+     public val dependencies: com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependency, DependenciesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.dependenciesList
@@ -605,7 +605,7 @@ public object LibraryReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addDependencies")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependency, DependenciesProxy>.add(value: protocol_buffers.Lib.LibraryDependency) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependency, DependenciesProxy>.add(value: protocol_buffers.LibraryDependency) {
       _builder.addDependencies(value)
     }
     /**
@@ -620,7 +620,7 @@ public object LibraryReleaseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignDependencies")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependency, DependenciesProxy>.plusAssign(value: protocol_buffers.Lib.LibraryDependency) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependency, DependenciesProxy>.plusAssign(value: protocol_buffers.LibraryDependency) {
       add(value)
     }
     /**
@@ -634,7 +634,7 @@ public object LibraryReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllDependencies")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependency, DependenciesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Lib.LibraryDependency>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependency, DependenciesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.LibraryDependency>) {
       _builder.addAllDependencies(values)
     }
     /**
@@ -649,7 +649,7 @@ public object LibraryReleaseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllDependencies")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependency, DependenciesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Lib.LibraryDependency>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependency, DependenciesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.LibraryDependency>) {
       addAll(values)
     }
     /**
@@ -664,7 +664,7 @@ public object LibraryReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setDependencies")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependency, DependenciesProxy>.set(index: kotlin.Int, value: protocol_buffers.Lib.LibraryDependency) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependency, DependenciesProxy>.set(index: kotlin.Int, value: protocol_buffers.LibraryDependency) {
       _builder.setDependencies(index, value)
     }
     /**
@@ -677,15 +677,15 @@ public object LibraryReleaseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearDependencies")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependency, DependenciesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependency, DependenciesProxy>.clear() {
       _builder.clearDependencies()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryRelease.copy(block: `protocol_buffers`.LibraryReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryRelease =
+public inline fun protocol_buffers.LibraryRelease.copy(block: `protocol_buffers`.LibraryReleaseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryRelease =
   `protocol_buffers`.LibraryReleaseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryReleaseOrBuilder.resourcesOrNull: protocol_buffers.Lib.DownloadResource?
+public val protocol_buffers.LibraryReleaseOrBuilder.resourcesOrNull: protocol_buffers.DownloadResource?
   get() = if (hasResources()) getResources() else null
 

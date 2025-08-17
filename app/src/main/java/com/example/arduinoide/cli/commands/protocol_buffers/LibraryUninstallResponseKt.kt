@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryUninstallResponse")
-public inline fun libraryUninstallResponse(block: protocol_buffers.LibraryUninstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUninstallResponse =
-  protocol_buffers.LibraryUninstallResponseKt.Dsl._create(protocol_buffers.Lib.LibraryUninstallResponse.newBuilder()).apply { block() }._build()
+public inline fun libraryUninstallResponse(block: protocol_buffers.LibraryUninstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUninstallResponse =
+  protocol_buffers.LibraryUninstallResponseKt.Dsl._create(protocol_buffers.LibraryUninstallResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryUninstallResponse`
  */
@@ -16,17 +16,17 @@ public object LibraryUninstallResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryUninstallResponse.Builder
+    private val _builder: protocol_buffers.LibraryUninstallResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryUninstallResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryUninstallResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryUninstallResponse = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryUninstallResponse = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryUninstallResponseKt {
      *
      * `.protocol_buffers.TaskProgress task_progress = 1;`
      */
-    public var taskProgress: protocol_buffers.Common.TaskProgress
+    public var taskProgress: protocol_buffers.TaskProgress
       @kotlin.jvm.JvmName("getTaskProgress")
         get() = _builder.taskProgress
       @kotlin.jvm.JvmName("setTaskProgress")
@@ -71,7 +71,7 @@ public object LibraryUninstallResponseKt {
      *
      * `.protocol_buffers.LibraryUninstallResponse.Result result = 2;`
      */
-    public var result: protocol_buffers.Lib.LibraryUninstallResponse.Result
+    public var result: protocol_buffers.LibraryUninstallResponse.Result
       @kotlin.jvm.JvmName("getResult")
         get() = _builder.result
       @kotlin.jvm.JvmName("setResult")
@@ -99,7 +99,7 @@ public object LibraryUninstallResponseKt {
     public fun hasResult(): kotlin.Boolean {
       return _builder.hasResult()
     }
-    public val messageCase: protocol_buffers.Lib.LibraryUninstallResponse.MessageCase
+    public val messageCase: protocol_buffers.LibraryUninstallResponse.MessageCase
     @kotlin.jvm.JvmName("getMessageCase")
       get() = _builder.getMessageCase()
 
@@ -108,8 +108,8 @@ public object LibraryUninstallResponseKt {
     }
   }
   @kotlin.jvm.JvmName("-initializeresult")
-  public inline fun result(block: protocol_buffers.LibraryUninstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUninstallResponse.Result =
-    protocol_buffers.LibraryUninstallResponseKt.ResultKt.Dsl._create(protocol_buffers.Lib.LibraryUninstallResponse.Result.newBuilder()).apply { block() }._build()
+  public inline fun result(block: protocol_buffers.LibraryUninstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUninstallResponse.Result =
+    protocol_buffers.LibraryUninstallResponseKt.ResultKt.Dsl._create(protocol_buffers.LibraryUninstallResponse.Result.newBuilder()).apply { block() }._build()
   /**
    * ```
    * Empty message, reserved for future expansion.
@@ -121,31 +121,31 @@ public object LibraryUninstallResponseKt {
     @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
     @com.google.protobuf.kotlin.ProtoDslMarker
     public class Dsl private constructor(
-      private val _builder: protocol_buffers.Lib.LibraryUninstallResponse.Result.Builder
+      private val _builder: protocol_buffers.LibraryUninstallResponse.Result.Builder
     ) {
       public companion object {
         @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-        internal fun _create(builder: protocol_buffers.Lib.LibraryUninstallResponse.Result.Builder): Dsl = Dsl(builder)
+        internal fun _create(builder: protocol_buffers.LibraryUninstallResponse.Result.Builder): Dsl = Dsl(builder)
       }
 
       @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-      internal fun _build(): protocol_buffers.Lib.LibraryUninstallResponse.Result = _builder.build()
+      internal fun _build(): protocol_buffers.LibraryUninstallResponse.Result = _builder.build()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryUninstallResponse.copy(block: `protocol_buffers`.LibraryUninstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUninstallResponse =
+public inline fun protocol_buffers.LibraryUninstallResponse.copy(block: `protocol_buffers`.LibraryUninstallResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUninstallResponse =
   `protocol_buffers`.LibraryUninstallResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryUninstallResponse.Result.copy(block: `protocol_buffers`.LibraryUninstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUninstallResponse.Result =
+public inline fun protocol_buffers.LibraryUninstallResponse.Result.copy(block: `protocol_buffers`.LibraryUninstallResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUninstallResponse.Result =
   `protocol_buffers`.LibraryUninstallResponseKt.ResultKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryUninstallResponseOrBuilder.taskProgressOrNull: protocol_buffers.Common.TaskProgress?
+public val protocol_buffers.LibraryUninstallResponseOrBuilder.taskProgressOrNull: protocol_buffers.TaskProgress?
   get() = if (hasTaskProgress()) getTaskProgress() else null
 
-public val protocol_buffers.Lib.LibraryUninstallResponseOrBuilder.resultOrNull: protocol_buffers.Lib.LibraryUninstallResponse.Result?
+public val protocol_buffers.LibraryUninstallResponseOrBuilder.resultOrNull: protocol_buffers.LibraryUninstallResponse.Result?
   get() = if (hasResult()) getResult() else null
 

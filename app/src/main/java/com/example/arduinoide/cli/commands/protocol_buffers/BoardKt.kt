@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeboard")
-public inline fun board(block: protocol_buffers.BoardKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Board =
-  protocol_buffers.BoardKt.Dsl._create(protocol_buffers.Common.Board.newBuilder()).apply { block() }._build()
+public inline fun board(block: protocol_buffers.BoardKt.Dsl.() -> kotlin.Unit): protocol_buffers.Board =
+  protocol_buffers.BoardKt.Dsl._create(protocol_buffers.Board.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.Board`
  */
@@ -16,17 +16,17 @@ public object BoardKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.Board.Builder
+    private val _builder: protocol_buffers.Board.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.Board.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.Board.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.Board = _builder.build()
+    internal fun _build(): protocol_buffers.Board = _builder.build()
 
     /**
      * ```
@@ -82,6 +82,6 @@ public object BoardKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.Board.copy(block: `protocol_buffers`.BoardKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Board =
+public inline fun protocol_buffers.Board.copy(block: `protocol_buffers`.BoardKt.Dsl.() -> kotlin.Unit): protocol_buffers.Board =
   `protocol_buffers`.BoardKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

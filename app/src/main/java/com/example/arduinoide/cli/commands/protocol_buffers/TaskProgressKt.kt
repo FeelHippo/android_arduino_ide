@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializetaskProgress")
-public inline fun taskProgress(block: protocol_buffers.TaskProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.TaskProgress =
-  protocol_buffers.TaskProgressKt.Dsl._create(protocol_buffers.Common.TaskProgress.newBuilder()).apply { block() }._build()
+public inline fun taskProgress(block: protocol_buffers.TaskProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.TaskProgress =
+  protocol_buffers.TaskProgressKt.Dsl._create(protocol_buffers.TaskProgress.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.TaskProgress`
  */
@@ -16,17 +16,17 @@ public object TaskProgressKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.TaskProgress.Builder
+    private val _builder: protocol_buffers.TaskProgress.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.TaskProgress.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.TaskProgress.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.TaskProgress = _builder.build()
+    internal fun _build(): protocol_buffers.TaskProgress = _builder.build()
 
     /**
      * ```
@@ -130,6 +130,6 @@ public object TaskProgressKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.TaskProgress.copy(block: `protocol_buffers`.TaskProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.TaskProgress =
+public inline fun protocol_buffers.TaskProgress.copy(block: `protocol_buffers`.TaskProgressKt.Dsl.() -> kotlin.Unit): protocol_buffers.TaskProgress =
   `protocol_buffers`.TaskProgressKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

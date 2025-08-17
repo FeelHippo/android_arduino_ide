@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializebuilderResult")
-public inline fun builderResult(block: protocol_buffers.BuilderResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.BuilderResult =
-  protocol_buffers.BuilderResultKt.Dsl._create(protocol_buffers.Compile.BuilderResult.newBuilder()).apply { block() }._build()
+public inline fun builderResult(block: protocol_buffers.BuilderResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.BuilderResult =
+  protocol_buffers.BuilderResultKt.Dsl._create(protocol_buffers.BuilderResult.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.BuilderResult`
  */
@@ -16,17 +16,17 @@ public object BuilderResultKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.BuilderResult.Builder
+    private val _builder: protocol_buffers.BuilderResult.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.BuilderResult.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.BuilderResult.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.BuilderResult = _builder.build()
+    internal fun _build(): protocol_buffers.BuilderResult = _builder.build()
 
     /**
      * ```
@@ -66,7 +66,7 @@ public object BuilderResultKt {
      *
      * `repeated .protocol_buffers.Library used_libraries = 2;`
      */
-     public val usedLibraries: com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.Library, UsedLibrariesProxy>
+     public val usedLibraries: com.google.protobuf.kotlin.DslList<protocol_buffers.Library, UsedLibrariesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.usedLibrariesList
@@ -81,7 +81,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addUsedLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.Library, UsedLibrariesProxy>.add(value: protocol_buffers.Lib.Library) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Library, UsedLibrariesProxy>.add(value: protocol_buffers.Library) {
       _builder.addUsedLibraries(value)
     }
     /**
@@ -95,7 +95,7 @@ public object BuilderResultKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignUsedLibraries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.Library, UsedLibrariesProxy>.plusAssign(value: protocol_buffers.Lib.Library) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Library, UsedLibrariesProxy>.plusAssign(value: protocol_buffers.Library) {
       add(value)
     }
     /**
@@ -108,7 +108,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllUsedLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.Library, UsedLibrariesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Lib.Library>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Library, UsedLibrariesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Library>) {
       _builder.addAllUsedLibraries(values)
     }
     /**
@@ -122,7 +122,7 @@ public object BuilderResultKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllUsedLibraries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.Library, UsedLibrariesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Lib.Library>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Library, UsedLibrariesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Library>) {
       addAll(values)
     }
     /**
@@ -136,7 +136,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setUsedLibraries")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.Library, UsedLibrariesProxy>.set(index: kotlin.Int, value: protocol_buffers.Lib.Library) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Library, UsedLibrariesProxy>.set(index: kotlin.Int, value: protocol_buffers.Library) {
       _builder.setUsedLibraries(index, value)
     }
     /**
@@ -148,7 +148,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearUsedLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.Library, UsedLibrariesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Library, UsedLibrariesProxy>.clear() {
       _builder.clearUsedLibraries()
     }
 
@@ -165,7 +165,7 @@ public object BuilderResultKt {
      *
      * `repeated .protocol_buffers.ExecutableSectionSize executable_sections_size = 3;`
      */
-     public val executableSectionsSize: com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.ExecutableSectionSize, ExecutableSectionsSizeProxy>
+     public val executableSectionsSize: com.google.protobuf.kotlin.DslList<protocol_buffers.ExecutableSectionSize, ExecutableSectionsSizeProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.executableSectionsSizeList
@@ -180,7 +180,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addExecutableSectionsSize")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.ExecutableSectionSize, ExecutableSectionsSizeProxy>.add(value: protocol_buffers.Compile.ExecutableSectionSize) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.ExecutableSectionSize, ExecutableSectionsSizeProxy>.add(value: protocol_buffers.ExecutableSectionSize) {
       _builder.addExecutableSectionsSize(value)
     }
     /**
@@ -194,7 +194,7 @@ public object BuilderResultKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignExecutableSectionsSize")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.ExecutableSectionSize, ExecutableSectionsSizeProxy>.plusAssign(value: protocol_buffers.Compile.ExecutableSectionSize) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.ExecutableSectionSize, ExecutableSectionsSizeProxy>.plusAssign(value: protocol_buffers.ExecutableSectionSize) {
       add(value)
     }
     /**
@@ -207,7 +207,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllExecutableSectionsSize")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.ExecutableSectionSize, ExecutableSectionsSizeProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Compile.ExecutableSectionSize>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.ExecutableSectionSize, ExecutableSectionsSizeProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.ExecutableSectionSize>) {
       _builder.addAllExecutableSectionsSize(values)
     }
     /**
@@ -221,7 +221,7 @@ public object BuilderResultKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllExecutableSectionsSize")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.ExecutableSectionSize, ExecutableSectionsSizeProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Compile.ExecutableSectionSize>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.ExecutableSectionSize, ExecutableSectionsSizeProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.ExecutableSectionSize>) {
       addAll(values)
     }
     /**
@@ -235,7 +235,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setExecutableSectionsSize")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.ExecutableSectionSize, ExecutableSectionsSizeProxy>.set(index: kotlin.Int, value: protocol_buffers.Compile.ExecutableSectionSize) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.ExecutableSectionSize, ExecutableSectionsSizeProxy>.set(index: kotlin.Int, value: protocol_buffers.ExecutableSectionSize) {
       _builder.setExecutableSectionsSize(index, value)
     }
     /**
@@ -247,7 +247,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearExecutableSectionsSize")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.ExecutableSectionSize, ExecutableSectionsSizeProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.ExecutableSectionSize, ExecutableSectionsSizeProxy>.clear() {
       _builder.clearExecutableSectionsSize()
     }
 
@@ -258,7 +258,7 @@ public object BuilderResultKt {
      *
      * `.protocol_buffers.InstalledPlatformReference board_platform = 4;`
      */
-    public var boardPlatform: protocol_buffers.Common.InstalledPlatformReference
+    public var boardPlatform: protocol_buffers.InstalledPlatformReference
       @kotlin.jvm.JvmName("getBoardPlatform")
         get() = _builder.boardPlatform
       @kotlin.jvm.JvmName("setBoardPlatform")
@@ -287,7 +287,7 @@ public object BuilderResultKt {
       return _builder.hasBoardPlatform()
     }
 
-    public val BuilderResultKt.Dsl.boardPlatformOrNull: protocol_buffers.Common.InstalledPlatformReference?
+    public val BuilderResultKt.Dsl.boardPlatformOrNull: protocol_buffers.InstalledPlatformReference?
       get() = _builder.boardPlatformOrNull
 
     /**
@@ -297,7 +297,7 @@ public object BuilderResultKt {
      *
      * `.protocol_buffers.InstalledPlatformReference build_platform = 5;`
      */
-    public var buildPlatform: protocol_buffers.Common.InstalledPlatformReference
+    public var buildPlatform: protocol_buffers.InstalledPlatformReference
       @kotlin.jvm.JvmName("getBuildPlatform")
         get() = _builder.buildPlatform
       @kotlin.jvm.JvmName("setBuildPlatform")
@@ -326,7 +326,7 @@ public object BuilderResultKt {
       return _builder.hasBuildPlatform()
     }
 
-    public val BuilderResultKt.Dsl.buildPlatformOrNull: protocol_buffers.Common.InstalledPlatformReference?
+    public val BuilderResultKt.Dsl.buildPlatformOrNull: protocol_buffers.InstalledPlatformReference?
       get() = _builder.buildPlatformOrNull
 
     /**
@@ -440,7 +440,7 @@ public object BuilderResultKt {
      *
      * `repeated .protocol_buffers.CompileDiagnostic diagnostics = 8;`
      */
-     public val diagnostics: com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnostic, DiagnosticsProxy>
+     public val diagnostics: com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnostic, DiagnosticsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.diagnosticsList
@@ -455,7 +455,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addDiagnostics")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnostic, DiagnosticsProxy>.add(value: protocol_buffers.Compile.CompileDiagnostic) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnostic, DiagnosticsProxy>.add(value: protocol_buffers.CompileDiagnostic) {
       _builder.addDiagnostics(value)
     }
     /**
@@ -469,7 +469,7 @@ public object BuilderResultKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignDiagnostics")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnostic, DiagnosticsProxy>.plusAssign(value: protocol_buffers.Compile.CompileDiagnostic) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnostic, DiagnosticsProxy>.plusAssign(value: protocol_buffers.CompileDiagnostic) {
       add(value)
     }
     /**
@@ -482,7 +482,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllDiagnostics")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnostic, DiagnosticsProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Compile.CompileDiagnostic>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnostic, DiagnosticsProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.CompileDiagnostic>) {
       _builder.addAllDiagnostics(values)
     }
     /**
@@ -496,7 +496,7 @@ public object BuilderResultKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllDiagnostics")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnostic, DiagnosticsProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Compile.CompileDiagnostic>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnostic, DiagnosticsProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.CompileDiagnostic>) {
       addAll(values)
     }
     /**
@@ -510,7 +510,7 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setDiagnostics")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnostic, DiagnosticsProxy>.set(index: kotlin.Int, value: protocol_buffers.Compile.CompileDiagnostic) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnostic, DiagnosticsProxy>.set(index: kotlin.Int, value: protocol_buffers.CompileDiagnostic) {
       _builder.setDiagnostics(index, value)
     }
     /**
@@ -522,18 +522,18 @@ public object BuilderResultKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearDiagnostics")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Compile.CompileDiagnostic, DiagnosticsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.CompileDiagnostic, DiagnosticsProxy>.clear() {
       _builder.clearDiagnostics()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.BuilderResult.copy(block: `protocol_buffers`.BuilderResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.BuilderResult =
+public inline fun protocol_buffers.BuilderResult.copy(block: `protocol_buffers`.BuilderResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.BuilderResult =
   `protocol_buffers`.BuilderResultKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Compile.BuilderResultOrBuilder.boardPlatformOrNull: protocol_buffers.Common.InstalledPlatformReference?
+public val protocol_buffers.BuilderResultOrBuilder.boardPlatformOrNull: protocol_buffers.InstalledPlatformReference?
   get() = if (hasBoardPlatform()) getBoardPlatform() else null
 
-public val protocol_buffers.Compile.BuilderResultOrBuilder.buildPlatformOrNull: protocol_buffers.Common.InstalledPlatformReference?
+public val protocol_buffers.BuilderResultOrBuilder.buildPlatformOrNull: protocol_buffers.InstalledPlatformReference?
   get() = if (hasBuildPlatform()) getBuildPlatform() else null
 

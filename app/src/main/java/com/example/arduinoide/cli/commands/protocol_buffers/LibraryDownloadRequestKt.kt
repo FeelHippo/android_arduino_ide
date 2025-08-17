@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryDownloadRequest")
-public inline fun libraryDownloadRequest(block: protocol_buffers.LibraryDownloadRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDownloadRequest =
-  protocol_buffers.LibraryDownloadRequestKt.Dsl._create(protocol_buffers.Lib.LibraryDownloadRequest.newBuilder()).apply { block() }._build()
+public inline fun libraryDownloadRequest(block: protocol_buffers.LibraryDownloadRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDownloadRequest =
+  protocol_buffers.LibraryDownloadRequestKt.Dsl._create(protocol_buffers.LibraryDownloadRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryDownloadRequest`
  */
@@ -16,17 +16,17 @@ public object LibraryDownloadRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryDownloadRequest.Builder
+    private val _builder: protocol_buffers.LibraryDownloadRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryDownloadRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryDownloadRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryDownloadRequest = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryDownloadRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryDownloadRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object LibraryDownloadRequestKt {
       return _builder.hasInstance()
     }
 
-    public val LibraryDownloadRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val LibraryDownloadRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -119,9 +119,9 @@ public object LibraryDownloadRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryDownloadRequest.copy(block: `protocol_buffers`.LibraryDownloadRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDownloadRequest =
+public inline fun protocol_buffers.LibraryDownloadRequest.copy(block: `protocol_buffers`.LibraryDownloadRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDownloadRequest =
   `protocol_buffers`.LibraryDownloadRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryDownloadRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.LibraryDownloadRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

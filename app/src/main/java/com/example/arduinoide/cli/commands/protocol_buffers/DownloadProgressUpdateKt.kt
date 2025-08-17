@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializedownloadProgressUpdate")
-public inline fun downloadProgressUpdate(block: protocol_buffers.DownloadProgressUpdateKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.DownloadProgressUpdate =
-  protocol_buffers.DownloadProgressUpdateKt.Dsl._create(protocol_buffers.Common.DownloadProgressUpdate.newBuilder()).apply { block() }._build()
+public inline fun downloadProgressUpdate(block: protocol_buffers.DownloadProgressUpdateKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadProgressUpdate =
+  protocol_buffers.DownloadProgressUpdateKt.Dsl._create(protocol_buffers.DownloadProgressUpdate.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.DownloadProgressUpdate`
  */
@@ -16,17 +16,17 @@ public object DownloadProgressUpdateKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.DownloadProgressUpdate.Builder
+    private val _builder: protocol_buffers.DownloadProgressUpdate.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.DownloadProgressUpdate.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.DownloadProgressUpdate.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.DownloadProgressUpdate = _builder.build()
+    internal fun _build(): protocol_buffers.DownloadProgressUpdate = _builder.build()
 
     /**
      * ```
@@ -80,6 +80,6 @@ public object DownloadProgressUpdateKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.DownloadProgressUpdate.copy(block: `protocol_buffers`.DownloadProgressUpdateKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.DownloadProgressUpdate =
+public inline fun protocol_buffers.DownloadProgressUpdate.copy(block: `protocol_buffers`.DownloadProgressUpdateKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadProgressUpdate =
   `protocol_buffers`.DownloadProgressUpdateKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

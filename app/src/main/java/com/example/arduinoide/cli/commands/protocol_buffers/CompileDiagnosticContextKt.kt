@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializecompileDiagnosticContext")
-public inline fun compileDiagnosticContext(block: protocol_buffers.CompileDiagnosticContextKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileDiagnosticContext =
-  protocol_buffers.CompileDiagnosticContextKt.Dsl._create(protocol_buffers.Compile.CompileDiagnosticContext.newBuilder()).apply { block() }._build()
+public inline fun compileDiagnosticContext(block: protocol_buffers.CompileDiagnosticContextKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileDiagnosticContext =
+  protocol_buffers.CompileDiagnosticContextKt.Dsl._create(protocol_buffers.CompileDiagnosticContext.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.CompileDiagnosticContext`
  */
@@ -16,17 +16,17 @@ public object CompileDiagnosticContextKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.CompileDiagnosticContext.Builder
+    private val _builder: protocol_buffers.CompileDiagnosticContext.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.CompileDiagnosticContext.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.CompileDiagnosticContext.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.CompileDiagnosticContext = _builder.build()
+    internal fun _build(): protocol_buffers.CompileDiagnosticContext = _builder.build()
 
     /**
      * ```
@@ -130,6 +130,6 @@ public object CompileDiagnosticContextKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.CompileDiagnosticContext.copy(block: `protocol_buffers`.CompileDiagnosticContextKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileDiagnosticContext =
+public inline fun protocol_buffers.CompileDiagnosticContext.copy(block: `protocol_buffers`.CompileDiagnosticContextKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileDiagnosticContext =
   `protocol_buffers`.CompileDiagnosticContextKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

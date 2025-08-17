@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeexecutableSectionSize")
-public inline fun executableSectionSize(block: protocol_buffers.ExecutableSectionSizeKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.ExecutableSectionSize =
-  protocol_buffers.ExecutableSectionSizeKt.Dsl._create(protocol_buffers.Compile.ExecutableSectionSize.newBuilder()).apply { block() }._build()
+public inline fun executableSectionSize(block: protocol_buffers.ExecutableSectionSizeKt.Dsl.() -> kotlin.Unit): protocol_buffers.ExecutableSectionSize =
+  protocol_buffers.ExecutableSectionSizeKt.Dsl._create(protocol_buffers.ExecutableSectionSize.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.ExecutableSectionSize`
  */
@@ -16,17 +16,17 @@ public object ExecutableSectionSizeKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.ExecutableSectionSize.Builder
+    private val _builder: protocol_buffers.ExecutableSectionSize.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.ExecutableSectionSize.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.ExecutableSectionSize.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.ExecutableSectionSize = _builder.build()
+    internal fun _build(): protocol_buffers.ExecutableSectionSize = _builder.build()
 
     /**
      * ```
@@ -105,6 +105,6 @@ public object ExecutableSectionSizeKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.ExecutableSectionSize.copy(block: `protocol_buffers`.ExecutableSectionSizeKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.ExecutableSectionSize =
+public inline fun protocol_buffers.ExecutableSectionSize.copy(block: `protocol_buffers`.ExecutableSectionSizeKt.Dsl.() -> kotlin.Unit): protocol_buffers.ExecutableSectionSize =
   `protocol_buffers`.ExecutableSectionSizeKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeplatform")
-public inline fun platform(block: protocol_buffers.PlatformKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Platform =
-  protocol_buffers.PlatformKt.Dsl._create(protocol_buffers.Common.Platform.newBuilder()).apply { block() }._build()
+public inline fun platform(block: protocol_buffers.PlatformKt.Dsl.() -> kotlin.Unit): protocol_buffers.Platform =
+  protocol_buffers.PlatformKt.Dsl._create(protocol_buffers.Platform.newBuilder()).apply { block() }._build()
 /**
  * ```
  * Platform is a structure containing all the information about a single
@@ -21,17 +21,17 @@ public object PlatformKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.Platform.Builder
+    private val _builder: protocol_buffers.Platform.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.Platform.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.Platform.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.Platform = _builder.build()
+    internal fun _build(): protocol_buffers.Platform = _builder.build()
 
     /**
      * ```
@@ -40,7 +40,7 @@ public object PlatformKt {
      *
      * `.protocol_buffers.PlatformMetadata metadata = 1;`
      */
-    public var metadata: protocol_buffers.Common.PlatformMetadata
+    public var metadata: protocol_buffers.PlatformMetadata
       @kotlin.jvm.JvmName("getMetadata")
         get() = _builder.metadata
       @kotlin.jvm.JvmName("setMetadata")
@@ -69,7 +69,7 @@ public object PlatformKt {
       return _builder.hasMetadata()
     }
 
-    public val PlatformKt.Dsl.metadataOrNull: protocol_buffers.Common.PlatformMetadata?
+    public val PlatformKt.Dsl.metadataOrNull: protocol_buffers.PlatformMetadata?
       get() = _builder.metadataOrNull
 
     /**
@@ -79,7 +79,7 @@ public object PlatformKt {
      *
      * `.protocol_buffers.PlatformRelease release = 2;`
      */
-    public var release: protocol_buffers.Common.PlatformRelease
+    public var release: protocol_buffers.PlatformRelease
       @kotlin.jvm.JvmName("getRelease")
         get() = _builder.release
       @kotlin.jvm.JvmName("setRelease")
@@ -108,17 +108,17 @@ public object PlatformKt {
       return _builder.hasRelease()
     }
 
-    public val PlatformKt.Dsl.releaseOrNull: protocol_buffers.Common.PlatformRelease?
+    public val PlatformKt.Dsl.releaseOrNull: protocol_buffers.PlatformRelease?
       get() = _builder.releaseOrNull
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.Platform.copy(block: `protocol_buffers`.PlatformKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Platform =
+public inline fun protocol_buffers.Platform.copy(block: `protocol_buffers`.PlatformKt.Dsl.() -> kotlin.Unit): protocol_buffers.Platform =
   `protocol_buffers`.PlatformKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Common.PlatformOrBuilder.metadataOrNull: protocol_buffers.Common.PlatformMetadata?
+public val protocol_buffers.PlatformOrBuilder.metadataOrNull: protocol_buffers.PlatformMetadata?
   get() = if (hasMetadata()) getMetadata() else null
 
-public val protocol_buffers.Common.PlatformOrBuilder.releaseOrNull: protocol_buffers.Common.PlatformRelease?
+public val protocol_buffers.PlatformOrBuilder.releaseOrNull: protocol_buffers.PlatformRelease?
   get() = if (hasRelease()) getRelease() else null
 

@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializehelpResources")
-public inline fun helpResources(block: protocol_buffers.HelpResourcesKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.HelpResources =
-  protocol_buffers.HelpResourcesKt.Dsl._create(protocol_buffers.Common.HelpResources.newBuilder()).apply { block() }._build()
+public inline fun helpResources(block: protocol_buffers.HelpResourcesKt.Dsl.() -> kotlin.Unit): protocol_buffers.HelpResources =
+  protocol_buffers.HelpResourcesKt.Dsl._create(protocol_buffers.HelpResources.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.HelpResources`
  */
@@ -16,17 +16,17 @@ public object HelpResourcesKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.HelpResources.Builder
+    private val _builder: protocol_buffers.HelpResources.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.HelpResources.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.HelpResources.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.HelpResources = _builder.build()
+    internal fun _build(): protocol_buffers.HelpResources = _builder.build()
 
     /**
      * ```
@@ -57,6 +57,6 @@ public object HelpResourcesKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.HelpResources.copy(block: `protocol_buffers`.HelpResourcesKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.HelpResources =
+public inline fun protocol_buffers.HelpResources.copy(block: `protocol_buffers`.HelpResourcesKt.Dsl.() -> kotlin.Unit): protocol_buffers.HelpResources =
   `protocol_buffers`.HelpResourcesKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

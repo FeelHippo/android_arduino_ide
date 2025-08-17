@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibrarySearchRequest")
-public inline fun librarySearchRequest(block: protocol_buffers.LibrarySearchRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibrarySearchRequest =
-  protocol_buffers.LibrarySearchRequestKt.Dsl._create(protocol_buffers.Lib.LibrarySearchRequest.newBuilder()).apply { block() }._build()
+public inline fun librarySearchRequest(block: protocol_buffers.LibrarySearchRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibrarySearchRequest =
+  protocol_buffers.LibrarySearchRequestKt.Dsl._create(protocol_buffers.LibrarySearchRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibrarySearchRequest`
  */
@@ -16,17 +16,17 @@ public object LibrarySearchRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibrarySearchRequest.Builder
+    private val _builder: protocol_buffers.LibrarySearchRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibrarySearchRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibrarySearchRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibrarySearchRequest = _builder.build()
+    internal fun _build(): protocol_buffers.LibrarySearchRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibrarySearchRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object LibrarySearchRequestKt {
       return _builder.hasInstance()
     }
 
-    public val LibrarySearchRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val LibrarySearchRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -121,9 +121,9 @@ public object LibrarySearchRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibrarySearchRequest.copy(block: `protocol_buffers`.LibrarySearchRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibrarySearchRequest =
+public inline fun protocol_buffers.LibrarySearchRequest.copy(block: `protocol_buffers`.LibrarySearchRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibrarySearchRequest =
   `protocol_buffers`.LibrarySearchRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibrarySearchRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.LibrarySearchRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

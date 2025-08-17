@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryInstallRequest")
-public inline fun libraryInstallRequest(block: protocol_buffers.LibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryInstallRequest =
-  protocol_buffers.LibraryInstallRequestKt.Dsl._create(protocol_buffers.Lib.LibraryInstallRequest.newBuilder()).apply { block() }._build()
+public inline fun libraryInstallRequest(block: protocol_buffers.LibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryInstallRequest =
+  protocol_buffers.LibraryInstallRequestKt.Dsl._create(protocol_buffers.LibraryInstallRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryInstallRequest`
  */
@@ -16,17 +16,17 @@ public object LibraryInstallRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryInstallRequest.Builder
+    private val _builder: protocol_buffers.LibraryInstallRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryInstallRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryInstallRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryInstallRequest = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryInstallRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryInstallRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object LibraryInstallRequestKt {
       return _builder.hasInstance()
     }
 
-    public val LibraryInstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val LibraryInstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -178,7 +178,7 @@ public object LibraryInstallRequestKt {
      *
      * `.protocol_buffers.LibraryInstallLocation install_location = 6;`
      */
-    public var installLocation: protocol_buffers.Lib.LibraryInstallLocation
+    public var installLocation: protocol_buffers.LibraryInstallLocation
       @kotlin.jvm.JvmName("getInstallLocation")
         get() = _builder.installLocation
       @kotlin.jvm.JvmName("setInstallLocation")
@@ -205,9 +205,9 @@ public object LibraryInstallRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryInstallRequest.copy(block: `protocol_buffers`.LibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryInstallRequest =
+public inline fun protocol_buffers.LibraryInstallRequest.copy(block: `protocol_buffers`.LibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryInstallRequest =
   `protocol_buffers`.LibraryInstallRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryInstallRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.LibraryInstallRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

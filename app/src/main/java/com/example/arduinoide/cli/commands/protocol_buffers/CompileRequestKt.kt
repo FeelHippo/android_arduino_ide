@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializecompileRequest")
-public inline fun compileRequest(block: protocol_buffers.CompileRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileRequest =
-  protocol_buffers.CompileRequestKt.Dsl._create(protocol_buffers.Compile.CompileRequest.newBuilder()).apply { block() }._build()
+public inline fun compileRequest(block: protocol_buffers.CompileRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileRequest =
+  protocol_buffers.CompileRequestKt.Dsl._create(protocol_buffers.CompileRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.CompileRequest`
  */
@@ -16,17 +16,17 @@ public object CompileRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.CompileRequest.Builder
+    private val _builder: protocol_buffers.CompileRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.CompileRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.CompileRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.CompileRequest = _builder.build()
+    internal fun _build(): protocol_buffers.CompileRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object CompileRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object CompileRequestKt {
       return _builder.hasInstance()
     }
 
-    public val CompileRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val CompileRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -1119,9 +1119,9 @@ public object CompileRequestKt {
     }}
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.CompileRequest.copy(block: `protocol_buffers`.CompileRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileRequest =
+public inline fun protocol_buffers.CompileRequest.copy(block: `protocol_buffers`.CompileRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileRequest =
   `protocol_buffers`.CompileRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Compile.CompileRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.CompileRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

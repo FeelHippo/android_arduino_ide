@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryDependencyStatus")
-public inline fun libraryDependencyStatus(block: protocol_buffers.LibraryDependencyStatusKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDependencyStatus =
-  protocol_buffers.LibraryDependencyStatusKt.Dsl._create(protocol_buffers.Lib.LibraryDependencyStatus.newBuilder()).apply { block() }._build()
+public inline fun libraryDependencyStatus(block: protocol_buffers.LibraryDependencyStatusKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDependencyStatus =
+  protocol_buffers.LibraryDependencyStatusKt.Dsl._create(protocol_buffers.LibraryDependencyStatus.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryDependencyStatus`
  */
@@ -16,17 +16,17 @@ public object LibraryDependencyStatusKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryDependencyStatus.Builder
+    private val _builder: protocol_buffers.LibraryDependencyStatus.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryDependencyStatus.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryDependencyStatus.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryDependencyStatus = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryDependencyStatus = _builder.build()
 
     /**
      * ```
@@ -105,6 +105,6 @@ public object LibraryDependencyStatusKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryDependencyStatus.copy(block: `protocol_buffers`.LibraryDependencyStatusKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDependencyStatus =
+public inline fun protocol_buffers.LibraryDependencyStatus.copy(block: `protocol_buffers`.LibraryDependencyStatusKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDependencyStatus =
   `protocol_buffers`.LibraryDependencyStatusKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

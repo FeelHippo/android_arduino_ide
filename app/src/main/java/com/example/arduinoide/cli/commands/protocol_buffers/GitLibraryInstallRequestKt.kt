@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializegitLibraryInstallRequest")
-public inline fun gitLibraryInstallRequest(block: protocol_buffers.GitLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.GitLibraryInstallRequest =
-  protocol_buffers.GitLibraryInstallRequestKt.Dsl._create(protocol_buffers.Lib.GitLibraryInstallRequest.newBuilder()).apply { block() }._build()
+public inline fun gitLibraryInstallRequest(block: protocol_buffers.GitLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.GitLibraryInstallRequest =
+  protocol_buffers.GitLibraryInstallRequestKt.Dsl._create(protocol_buffers.GitLibraryInstallRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.GitLibraryInstallRequest`
  */
@@ -16,17 +16,17 @@ public object GitLibraryInstallRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.GitLibraryInstallRequest.Builder
+    private val _builder: protocol_buffers.GitLibraryInstallRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.GitLibraryInstallRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.GitLibraryInstallRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.GitLibraryInstallRequest = _builder.build()
+    internal fun _build(): protocol_buffers.GitLibraryInstallRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object GitLibraryInstallRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object GitLibraryInstallRequestKt {
       return _builder.hasInstance()
     }
 
-    public val GitLibraryInstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val GitLibraryInstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -121,9 +121,9 @@ public object GitLibraryInstallRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.GitLibraryInstallRequest.copy(block: `protocol_buffers`.GitLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.GitLibraryInstallRequest =
+public inline fun protocol_buffers.GitLibraryInstallRequest.copy(block: `protocol_buffers`.GitLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.GitLibraryInstallRequest =
   `protocol_buffers`.GitLibraryInstallRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.GitLibraryInstallRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.GitLibraryInstallRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

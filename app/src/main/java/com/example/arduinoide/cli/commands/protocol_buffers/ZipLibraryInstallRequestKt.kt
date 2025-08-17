@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializezipLibraryInstallRequest")
-public inline fun zipLibraryInstallRequest(block: protocol_buffers.ZipLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.ZipLibraryInstallRequest =
-  protocol_buffers.ZipLibraryInstallRequestKt.Dsl._create(protocol_buffers.Lib.ZipLibraryInstallRequest.newBuilder()).apply { block() }._build()
+public inline fun zipLibraryInstallRequest(block: protocol_buffers.ZipLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.ZipLibraryInstallRequest =
+  protocol_buffers.ZipLibraryInstallRequestKt.Dsl._create(protocol_buffers.ZipLibraryInstallRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.ZipLibraryInstallRequest`
  */
@@ -16,17 +16,17 @@ public object ZipLibraryInstallRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.ZipLibraryInstallRequest.Builder
+    private val _builder: protocol_buffers.ZipLibraryInstallRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.ZipLibraryInstallRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.ZipLibraryInstallRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.ZipLibraryInstallRequest = _builder.build()
+    internal fun _build(): protocol_buffers.ZipLibraryInstallRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object ZipLibraryInstallRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object ZipLibraryInstallRequestKt {
       return _builder.hasInstance()
     }
 
-    public val ZipLibraryInstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val ZipLibraryInstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -121,9 +121,9 @@ public object ZipLibraryInstallRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.ZipLibraryInstallRequest.copy(block: `protocol_buffers`.ZipLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.ZipLibraryInstallRequest =
+public inline fun protocol_buffers.ZipLibraryInstallRequest.copy(block: `protocol_buffers`.ZipLibraryInstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.ZipLibraryInstallRequest =
   `protocol_buffers`.ZipLibraryInstallRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.ZipLibraryInstallRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.ZipLibraryInstallRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

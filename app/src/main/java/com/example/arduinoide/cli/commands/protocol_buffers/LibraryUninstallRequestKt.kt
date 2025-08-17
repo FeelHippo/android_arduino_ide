@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryUninstallRequest")
-public inline fun libraryUninstallRequest(block: protocol_buffers.LibraryUninstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUninstallRequest =
-  protocol_buffers.LibraryUninstallRequestKt.Dsl._create(protocol_buffers.Lib.LibraryUninstallRequest.newBuilder()).apply { block() }._build()
+public inline fun libraryUninstallRequest(block: protocol_buffers.LibraryUninstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUninstallRequest =
+  protocol_buffers.LibraryUninstallRequestKt.Dsl._create(protocol_buffers.LibraryUninstallRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryUninstallRequest`
  */
@@ -16,17 +16,17 @@ public object LibraryUninstallRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryUninstallRequest.Builder
+    private val _builder: protocol_buffers.LibraryUninstallRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryUninstallRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryUninstallRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryUninstallRequest = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryUninstallRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryUninstallRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object LibraryUninstallRequestKt {
       return _builder.hasInstance()
     }
 
-    public val LibraryUninstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val LibraryUninstallRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -119,9 +119,9 @@ public object LibraryUninstallRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryUninstallRequest.copy(block: `protocol_buffers`.LibraryUninstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryUninstallRequest =
+public inline fun protocol_buffers.LibraryUninstallRequest.copy(block: `protocol_buffers`.LibraryUninstallRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryUninstallRequest =
   `protocol_buffers`.LibraryUninstallRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryUninstallRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.LibraryUninstallRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

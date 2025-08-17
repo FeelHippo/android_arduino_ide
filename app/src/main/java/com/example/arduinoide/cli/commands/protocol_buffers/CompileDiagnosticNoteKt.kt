@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializecompileDiagnosticNote")
-public inline fun compileDiagnosticNote(block: protocol_buffers.CompileDiagnosticNoteKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileDiagnosticNote =
-  protocol_buffers.CompileDiagnosticNoteKt.Dsl._create(protocol_buffers.Compile.CompileDiagnosticNote.newBuilder()).apply { block() }._build()
+public inline fun compileDiagnosticNote(block: protocol_buffers.CompileDiagnosticNoteKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileDiagnosticNote =
+  protocol_buffers.CompileDiagnosticNoteKt.Dsl._create(protocol_buffers.CompileDiagnosticNote.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.CompileDiagnosticNote`
  */
@@ -16,17 +16,17 @@ public object CompileDiagnosticNoteKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Compile.CompileDiagnosticNote.Builder
+    private val _builder: protocol_buffers.CompileDiagnosticNote.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Compile.CompileDiagnosticNote.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.CompileDiagnosticNote.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Compile.CompileDiagnosticNote = _builder.build()
+    internal fun _build(): protocol_buffers.CompileDiagnosticNote = _builder.build()
 
     /**
      * ```
@@ -130,6 +130,6 @@ public object CompileDiagnosticNoteKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Compile.CompileDiagnosticNote.copy(block: `protocol_buffers`.CompileDiagnosticNoteKt.Dsl.() -> kotlin.Unit): protocol_buffers.Compile.CompileDiagnosticNote =
+public inline fun protocol_buffers.CompileDiagnosticNote.copy(block: `protocol_buffers`.CompileDiagnosticNoteKt.Dsl.() -> kotlin.Unit): protocol_buffers.CompileDiagnosticNote =
   `protocol_buffers`.CompileDiagnosticNoteKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

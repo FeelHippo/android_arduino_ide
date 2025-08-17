@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryResolveDependenciesResponse")
-public inline fun libraryResolveDependenciesResponse(block: protocol_buffers.LibraryResolveDependenciesResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryResolveDependenciesResponse =
-  protocol_buffers.LibraryResolveDependenciesResponseKt.Dsl._create(protocol_buffers.Lib.LibraryResolveDependenciesResponse.newBuilder()).apply { block() }._build()
+public inline fun libraryResolveDependenciesResponse(block: protocol_buffers.LibraryResolveDependenciesResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryResolveDependenciesResponse =
+  protocol_buffers.LibraryResolveDependenciesResponseKt.Dsl._create(protocol_buffers.LibraryResolveDependenciesResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryResolveDependenciesResponse`
  */
@@ -16,17 +16,17 @@ public object LibraryResolveDependenciesResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryResolveDependenciesResponse.Builder
+    private val _builder: protocol_buffers.LibraryResolveDependenciesResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryResolveDependenciesResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryResolveDependenciesResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryResolveDependenciesResponse = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryResolveDependenciesResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -41,7 +41,7 @@ public object LibraryResolveDependenciesResponseKt {
      *
      * `repeated .protocol_buffers.LibraryDependencyStatus dependencies = 1;`
      */
-     public val dependencies: com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependencyStatus, DependenciesProxy>
+     public val dependencies: com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependencyStatus, DependenciesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.dependenciesList
@@ -56,7 +56,7 @@ public object LibraryResolveDependenciesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addDependencies")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependencyStatus, DependenciesProxy>.add(value: protocol_buffers.Lib.LibraryDependencyStatus) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependencyStatus, DependenciesProxy>.add(value: protocol_buffers.LibraryDependencyStatus) {
       _builder.addDependencies(value)
     }
     /**
@@ -70,7 +70,7 @@ public object LibraryResolveDependenciesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignDependencies")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependencyStatus, DependenciesProxy>.plusAssign(value: protocol_buffers.Lib.LibraryDependencyStatus) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependencyStatus, DependenciesProxy>.plusAssign(value: protocol_buffers.LibraryDependencyStatus) {
       add(value)
     }
     /**
@@ -83,7 +83,7 @@ public object LibraryResolveDependenciesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllDependencies")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependencyStatus, DependenciesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Lib.LibraryDependencyStatus>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependencyStatus, DependenciesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.LibraryDependencyStatus>) {
       _builder.addAllDependencies(values)
     }
     /**
@@ -97,7 +97,7 @@ public object LibraryResolveDependenciesResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllDependencies")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependencyStatus, DependenciesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Lib.LibraryDependencyStatus>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependencyStatus, DependenciesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.LibraryDependencyStatus>) {
       addAll(values)
     }
     /**
@@ -111,7 +111,7 @@ public object LibraryResolveDependenciesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setDependencies")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependencyStatus, DependenciesProxy>.set(index: kotlin.Int, value: protocol_buffers.Lib.LibraryDependencyStatus) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependencyStatus, DependenciesProxy>.set(index: kotlin.Int, value: protocol_buffers.LibraryDependencyStatus) {
       _builder.setDependencies(index, value)
     }
     /**
@@ -123,12 +123,12 @@ public object LibraryResolveDependenciesResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearDependencies")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.LibraryDependencyStatus, DependenciesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.LibraryDependencyStatus, DependenciesProxy>.clear() {
       _builder.clearDependencies()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryResolveDependenciesResponse.copy(block: `protocol_buffers`.LibraryResolveDependenciesResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryResolveDependenciesResponse =
+public inline fun protocol_buffers.LibraryResolveDependenciesResponse.copy(block: `protocol_buffers`.LibraryResolveDependenciesResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryResolveDependenciesResponse =
   `protocol_buffers`.LibraryResolveDependenciesResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

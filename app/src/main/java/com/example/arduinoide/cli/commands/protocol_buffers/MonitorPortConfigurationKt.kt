@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializemonitorPortConfiguration")
-public inline fun monitorPortConfiguration(block: protocol_buffers.MonitorPortConfigurationKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.MonitorPortConfiguration =
-  protocol_buffers.MonitorPortConfigurationKt.Dsl._create(protocol_buffers.Common.MonitorPortConfiguration.newBuilder()).apply { block() }._build()
+public inline fun monitorPortConfiguration(block: protocol_buffers.MonitorPortConfigurationKt.Dsl.() -> kotlin.Unit): protocol_buffers.MonitorPortConfiguration =
+  protocol_buffers.MonitorPortConfigurationKt.Dsl._create(protocol_buffers.MonitorPortConfiguration.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.MonitorPortConfiguration`
  */
@@ -16,17 +16,17 @@ public object MonitorPortConfigurationKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.MonitorPortConfiguration.Builder
+    private val _builder: protocol_buffers.MonitorPortConfiguration.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.MonitorPortConfiguration.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.MonitorPortConfiguration.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.MonitorPortConfiguration = _builder.build()
+    internal fun _build(): protocol_buffers.MonitorPortConfiguration = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -41,7 +41,7 @@ public object MonitorPortConfigurationKt {
      *
      * `repeated .protocol_buffers.MonitorPortSetting settings = 1;`
      */
-     public val settings: com.google.protobuf.kotlin.DslList<protocol_buffers.Common.MonitorPortSetting, SettingsProxy>
+     public val settings: com.google.protobuf.kotlin.DslList<protocol_buffers.MonitorPortSetting, SettingsProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.settingsList
@@ -56,7 +56,7 @@ public object MonitorPortConfigurationKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addSettings")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.MonitorPortSetting, SettingsProxy>.add(value: protocol_buffers.Common.MonitorPortSetting) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.MonitorPortSetting, SettingsProxy>.add(value: protocol_buffers.MonitorPortSetting) {
       _builder.addSettings(value)
     }
     /**
@@ -70,7 +70,7 @@ public object MonitorPortConfigurationKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignSettings")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.MonitorPortSetting, SettingsProxy>.plusAssign(value: protocol_buffers.Common.MonitorPortSetting) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.MonitorPortSetting, SettingsProxy>.plusAssign(value: protocol_buffers.MonitorPortSetting) {
       add(value)
     }
     /**
@@ -83,7 +83,7 @@ public object MonitorPortConfigurationKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllSettings")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.MonitorPortSetting, SettingsProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Common.MonitorPortSetting>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.MonitorPortSetting, SettingsProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.MonitorPortSetting>) {
       _builder.addAllSettings(values)
     }
     /**
@@ -97,7 +97,7 @@ public object MonitorPortConfigurationKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllSettings")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.MonitorPortSetting, SettingsProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Common.MonitorPortSetting>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.MonitorPortSetting, SettingsProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.MonitorPortSetting>) {
       addAll(values)
     }
     /**
@@ -111,7 +111,7 @@ public object MonitorPortConfigurationKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setSettings")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.MonitorPortSetting, SettingsProxy>.set(index: kotlin.Int, value: protocol_buffers.Common.MonitorPortSetting) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.MonitorPortSetting, SettingsProxy>.set(index: kotlin.Int, value: protocol_buffers.MonitorPortSetting) {
       _builder.setSettings(index, value)
     }
     /**
@@ -123,12 +123,12 @@ public object MonitorPortConfigurationKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearSettings")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Common.MonitorPortSetting, SettingsProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.MonitorPortSetting, SettingsProxy>.clear() {
       _builder.clearSettings()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.MonitorPortConfiguration.copy(block: `protocol_buffers`.MonitorPortConfigurationKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.MonitorPortConfiguration =
+public inline fun protocol_buffers.MonitorPortConfiguration.copy(block: `protocol_buffers`.MonitorPortConfigurationKt.Dsl.() -> kotlin.Unit): protocol_buffers.MonitorPortConfiguration =
   `protocol_buffers`.MonitorPortConfigurationKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibrarySearchResponse")
-public inline fun librarySearchResponse(block: protocol_buffers.LibrarySearchResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibrarySearchResponse =
-  protocol_buffers.LibrarySearchResponseKt.Dsl._create(protocol_buffers.Lib.LibrarySearchResponse.newBuilder()).apply { block() }._build()
+public inline fun librarySearchResponse(block: protocol_buffers.LibrarySearchResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibrarySearchResponse =
+  protocol_buffers.LibrarySearchResponseKt.Dsl._create(protocol_buffers.LibrarySearchResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibrarySearchResponse`
  */
@@ -16,17 +16,17 @@ public object LibrarySearchResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibrarySearchResponse.Builder
+    private val _builder: protocol_buffers.LibrarySearchResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibrarySearchResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibrarySearchResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibrarySearchResponse = _builder.build()
+    internal fun _build(): protocol_buffers.LibrarySearchResponse = _builder.build()
 
     /**
      * An uninstantiable, behaviorless type to represent the field in
@@ -41,7 +41,7 @@ public object LibrarySearchResponseKt {
      *
      * `repeated .protocol_buffers.SearchedLibrary libraries = 1;`
      */
-     public val libraries: com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.SearchedLibrary, LibrariesProxy>
+     public val libraries: com.google.protobuf.kotlin.DslList<protocol_buffers.SearchedLibrary, LibrariesProxy>
       @kotlin.jvm.JvmSynthetic
   get() = com.google.protobuf.kotlin.DslList(
         _builder.librariesList
@@ -56,7 +56,7 @@ public object LibrarySearchResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.SearchedLibrary, LibrariesProxy>.add(value: protocol_buffers.Lib.SearchedLibrary) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.SearchedLibrary, LibrariesProxy>.add(value: protocol_buffers.SearchedLibrary) {
       _builder.addLibraries(value)
     }
     /**
@@ -70,7 +70,7 @@ public object LibrarySearchResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignLibraries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.SearchedLibrary, LibrariesProxy>.plusAssign(value: protocol_buffers.Lib.SearchedLibrary) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.SearchedLibrary, LibrariesProxy>.plusAssign(value: protocol_buffers.SearchedLibrary) {
       add(value)
     }
     /**
@@ -83,7 +83,7 @@ public object LibrarySearchResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("addAllLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.SearchedLibrary, LibrariesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.Lib.SearchedLibrary>) {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.SearchedLibrary, LibrariesProxy>.addAll(values: kotlin.collections.Iterable<protocol_buffers.SearchedLibrary>) {
       _builder.addAllLibraries(values)
     }
     /**
@@ -97,7 +97,7 @@ public object LibrarySearchResponseKt {
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("plusAssignAllLibraries")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.SearchedLibrary, LibrariesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.Lib.SearchedLibrary>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.SearchedLibrary, LibrariesProxy>.plusAssign(values: kotlin.collections.Iterable<protocol_buffers.SearchedLibrary>) {
       addAll(values)
     }
     /**
@@ -111,7 +111,7 @@ public object LibrarySearchResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("setLibraries")
-    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.SearchedLibrary, LibrariesProxy>.set(index: kotlin.Int, value: protocol_buffers.Lib.SearchedLibrary) {
+    public operator fun com.google.protobuf.kotlin.DslList<protocol_buffers.SearchedLibrary, LibrariesProxy>.set(index: kotlin.Int, value: protocol_buffers.SearchedLibrary) {
       _builder.setLibraries(index, value)
     }
     /**
@@ -123,7 +123,7 @@ public object LibrarySearchResponseKt {
      */
     @kotlin.jvm.JvmSynthetic
 @kotlin.jvm.JvmName("clearLibraries")
-    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.Lib.SearchedLibrary, LibrariesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<protocol_buffers.SearchedLibrary, LibrariesProxy>.clear() {
       _builder.clearLibraries()
     }
 
@@ -134,7 +134,7 @@ public object LibrarySearchResponseKt {
      *
      * `.protocol_buffers.LibrarySearchStatus status = 2;`
      */
-    public var status: protocol_buffers.Lib.LibrarySearchStatus
+    public var status: protocol_buffers.LibrarySearchStatus
       @kotlin.jvm.JvmName("getStatus")
         get() = _builder.status
       @kotlin.jvm.JvmName("setStatus")
@@ -161,6 +161,6 @@ public object LibrarySearchResponseKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibrarySearchResponse.copy(block: `protocol_buffers`.LibrarySearchResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibrarySearchResponse =
+public inline fun protocol_buffers.LibrarySearchResponse.copy(block: `protocol_buffers`.LibrarySearchResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibrarySearchResponse =
   `protocol_buffers`.LibrarySearchResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

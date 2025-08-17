@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryDependency")
-public inline fun libraryDependency(block: protocol_buffers.LibraryDependencyKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDependency =
-  protocol_buffers.LibraryDependencyKt.Dsl._create(protocol_buffers.Lib.LibraryDependency.newBuilder()).apply { block() }._build()
+public inline fun libraryDependency(block: protocol_buffers.LibraryDependencyKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDependency =
+  protocol_buffers.LibraryDependencyKt.Dsl._create(protocol_buffers.LibraryDependency.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryDependency`
  */
@@ -16,17 +16,17 @@ public object LibraryDependencyKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryDependency.Builder
+    private val _builder: protocol_buffers.LibraryDependency.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryDependency.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryDependency.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryDependency = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryDependency = _builder.build()
 
     /**
      * ```
@@ -80,6 +80,6 @@ public object LibraryDependencyKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryDependency.copy(block: `protocol_buffers`.LibraryDependencyKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDependency =
+public inline fun protocol_buffers.LibraryDependency.copy(block: `protocol_buffers`.LibraryDependencyKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDependency =
   `protocol_buffers`.LibraryDependencyKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

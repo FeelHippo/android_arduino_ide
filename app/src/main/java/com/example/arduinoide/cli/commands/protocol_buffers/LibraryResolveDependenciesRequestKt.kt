@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryResolveDependenciesRequest")
-public inline fun libraryResolveDependenciesRequest(block: protocol_buffers.LibraryResolveDependenciesRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryResolveDependenciesRequest =
-  protocol_buffers.LibraryResolveDependenciesRequestKt.Dsl._create(protocol_buffers.Lib.LibraryResolveDependenciesRequest.newBuilder()).apply { block() }._build()
+public inline fun libraryResolveDependenciesRequest(block: protocol_buffers.LibraryResolveDependenciesRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryResolveDependenciesRequest =
+  protocol_buffers.LibraryResolveDependenciesRequestKt.Dsl._create(protocol_buffers.LibraryResolveDependenciesRequest.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryResolveDependenciesRequest`
  */
@@ -16,17 +16,17 @@ public object LibraryResolveDependenciesRequestKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryResolveDependenciesRequest.Builder
+    private val _builder: protocol_buffers.LibraryResolveDependenciesRequest.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryResolveDependenciesRequest.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryResolveDependenciesRequest.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryResolveDependenciesRequest = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryResolveDependenciesRequest = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryResolveDependenciesRequestKt {
      *
      * `.protocol_buffers.Instance instance = 1;`
      */
-    public var instance: protocol_buffers.Common.Instance
+    public var instance: protocol_buffers.Instance
       @kotlin.jvm.JvmName("getInstance")
         get() = _builder.instance
       @kotlin.jvm.JvmName("setInstance")
@@ -64,7 +64,7 @@ public object LibraryResolveDependenciesRequestKt {
       return _builder.hasInstance()
     }
 
-    public val LibraryResolveDependenciesRequestKt.Dsl.instanceOrNull: protocol_buffers.Common.Instance?
+    public val LibraryResolveDependenciesRequestKt.Dsl.instanceOrNull: protocol_buffers.Instance?
       get() = _builder.instanceOrNull
 
     /**
@@ -148,9 +148,9 @@ public object LibraryResolveDependenciesRequestKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryResolveDependenciesRequest.copy(block: `protocol_buffers`.LibraryResolveDependenciesRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryResolveDependenciesRequest =
+public inline fun protocol_buffers.LibraryResolveDependenciesRequest.copy(block: `protocol_buffers`.LibraryResolveDependenciesRequestKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryResolveDependenciesRequest =
   `protocol_buffers`.LibraryResolveDependenciesRequestKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryResolveDependenciesRequestOrBuilder.instanceOrNull: protocol_buffers.Common.Instance?
+public val protocol_buffers.LibraryResolveDependenciesRequestOrBuilder.instanceOrNull: protocol_buffers.Instance?
   get() = if (hasInstance()) getInstance() else null
 

@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializedownloadResource")
-public inline fun downloadResource(block: protocol_buffers.DownloadResourceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.DownloadResource =
-  protocol_buffers.DownloadResourceKt.Dsl._create(protocol_buffers.Lib.DownloadResource.newBuilder()).apply { block() }._build()
+public inline fun downloadResource(block: protocol_buffers.DownloadResourceKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadResource =
+  protocol_buffers.DownloadResourceKt.Dsl._create(protocol_buffers.DownloadResource.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.DownloadResource`
  */
@@ -16,17 +16,17 @@ public object DownloadResourceKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.DownloadResource.Builder
+    private val _builder: protocol_buffers.DownloadResource.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.DownloadResource.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.DownloadResource.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.DownloadResource = _builder.build()
+    internal fun _build(): protocol_buffers.DownloadResource = _builder.build()
 
     /**
      * ```
@@ -157,6 +157,6 @@ public object DownloadResourceKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.DownloadResource.copy(block: `protocol_buffers`.DownloadResourceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.DownloadResource =
+public inline fun protocol_buffers.DownloadResource.copy(block: `protocol_buffers`.DownloadResourceKt.Dsl.() -> kotlin.Unit): protocol_buffers.DownloadResource =
   `protocol_buffers`.DownloadResourceKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeinstalledPlatformReference")
-public inline fun installedPlatformReference(block: protocol_buffers.InstalledPlatformReferenceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.InstalledPlatformReference =
-  protocol_buffers.InstalledPlatformReferenceKt.Dsl._create(protocol_buffers.Common.InstalledPlatformReference.newBuilder()).apply { block() }._build()
+public inline fun installedPlatformReference(block: protocol_buffers.InstalledPlatformReferenceKt.Dsl.() -> kotlin.Unit): protocol_buffers.InstalledPlatformReference =
+  protocol_buffers.InstalledPlatformReferenceKt.Dsl._create(protocol_buffers.InstalledPlatformReference.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.InstalledPlatformReference`
  */
@@ -16,17 +16,17 @@ public object InstalledPlatformReferenceKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.InstalledPlatformReference.Builder
+    private val _builder: protocol_buffers.InstalledPlatformReference.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.InstalledPlatformReference.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.InstalledPlatformReference.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.InstalledPlatformReference = _builder.build()
+    internal fun _build(): protocol_buffers.InstalledPlatformReference = _builder.build()
 
     /**
      * ```
@@ -130,6 +130,6 @@ public object InstalledPlatformReferenceKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.InstalledPlatformReference.copy(block: `protocol_buffers`.InstalledPlatformReferenceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.InstalledPlatformReference =
+public inline fun protocol_buffers.InstalledPlatformReference.copy(block: `protocol_buffers`.InstalledPlatformReferenceKt.Dsl.() -> kotlin.Unit): protocol_buffers.InstalledPlatformReference =
   `protocol_buffers`.InstalledPlatformReferenceKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

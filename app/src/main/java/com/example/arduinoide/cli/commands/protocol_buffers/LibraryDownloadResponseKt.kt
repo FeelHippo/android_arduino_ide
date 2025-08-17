@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializelibraryDownloadResponse")
-public inline fun libraryDownloadResponse(block: protocol_buffers.LibraryDownloadResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDownloadResponse =
-  protocol_buffers.LibraryDownloadResponseKt.Dsl._create(protocol_buffers.Lib.LibraryDownloadResponse.newBuilder()).apply { block() }._build()
+public inline fun libraryDownloadResponse(block: protocol_buffers.LibraryDownloadResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDownloadResponse =
+  protocol_buffers.LibraryDownloadResponseKt.Dsl._create(protocol_buffers.LibraryDownloadResponse.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.LibraryDownloadResponse`
  */
@@ -16,17 +16,17 @@ public object LibraryDownloadResponseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Lib.LibraryDownloadResponse.Builder
+    private val _builder: protocol_buffers.LibraryDownloadResponse.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Lib.LibraryDownloadResponse.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.LibraryDownloadResponse.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Lib.LibraryDownloadResponse = _builder.build()
+    internal fun _build(): protocol_buffers.LibraryDownloadResponse = _builder.build()
 
     /**
      * ```
@@ -35,7 +35,7 @@ public object LibraryDownloadResponseKt {
      *
      * `.protocol_buffers.DownloadProgress progress = 1;`
      */
-    public var progress: protocol_buffers.Common.DownloadProgress
+    public var progress: protocol_buffers.DownloadProgress
       @kotlin.jvm.JvmName("getProgress")
         get() = _builder.progress
       @kotlin.jvm.JvmName("setProgress")
@@ -71,7 +71,7 @@ public object LibraryDownloadResponseKt {
      *
      * `.protocol_buffers.LibraryDownloadResponse.Result result = 2;`
      */
-    public var result: protocol_buffers.Lib.LibraryDownloadResponse.Result
+    public var result: protocol_buffers.LibraryDownloadResponse.Result
       @kotlin.jvm.JvmName("getResult")
         get() = _builder.result
       @kotlin.jvm.JvmName("setResult")
@@ -99,7 +99,7 @@ public object LibraryDownloadResponseKt {
     public fun hasResult(): kotlin.Boolean {
       return _builder.hasResult()
     }
-    public val messageCase: protocol_buffers.Lib.LibraryDownloadResponse.MessageCase
+    public val messageCase: protocol_buffers.LibraryDownloadResponse.MessageCase
     @kotlin.jvm.JvmName("getMessageCase")
       get() = _builder.getMessageCase()
 
@@ -108,8 +108,8 @@ public object LibraryDownloadResponseKt {
     }
   }
   @kotlin.jvm.JvmName("-initializeresult")
-  public inline fun result(block: protocol_buffers.LibraryDownloadResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDownloadResponse.Result =
-    protocol_buffers.LibraryDownloadResponseKt.ResultKt.Dsl._create(protocol_buffers.Lib.LibraryDownloadResponse.Result.newBuilder()).apply { block() }._build()
+  public inline fun result(block: protocol_buffers.LibraryDownloadResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDownloadResponse.Result =
+    protocol_buffers.LibraryDownloadResponseKt.ResultKt.Dsl._create(protocol_buffers.LibraryDownloadResponse.Result.newBuilder()).apply { block() }._build()
   /**
    * ```
    * Empty message, reserved for future expansion.
@@ -121,31 +121,31 @@ public object LibraryDownloadResponseKt {
     @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
     @com.google.protobuf.kotlin.ProtoDslMarker
     public class Dsl private constructor(
-      private val _builder: protocol_buffers.Lib.LibraryDownloadResponse.Result.Builder
+      private val _builder: protocol_buffers.LibraryDownloadResponse.Result.Builder
     ) {
       public companion object {
         @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-        internal fun _create(builder: protocol_buffers.Lib.LibraryDownloadResponse.Result.Builder): Dsl = Dsl(builder)
+        internal fun _create(builder: protocol_buffers.LibraryDownloadResponse.Result.Builder): Dsl = Dsl(builder)
       }
 
       @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-      internal fun _build(): protocol_buffers.Lib.LibraryDownloadResponse.Result = _builder.build()
+      internal fun _build(): protocol_buffers.LibraryDownloadResponse.Result = _builder.build()
     }
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryDownloadResponse.copy(block: `protocol_buffers`.LibraryDownloadResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDownloadResponse =
+public inline fun protocol_buffers.LibraryDownloadResponse.copy(block: `protocol_buffers`.LibraryDownloadResponseKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDownloadResponse =
   `protocol_buffers`.LibraryDownloadResponseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Lib.LibraryDownloadResponse.Result.copy(block: `protocol_buffers`.LibraryDownloadResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.Lib.LibraryDownloadResponse.Result =
+public inline fun protocol_buffers.LibraryDownloadResponse.Result.copy(block: `protocol_buffers`.LibraryDownloadResponseKt.ResultKt.Dsl.() -> kotlin.Unit): protocol_buffers.LibraryDownloadResponse.Result =
   `protocol_buffers`.LibraryDownloadResponseKt.ResultKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val protocol_buffers.Lib.LibraryDownloadResponseOrBuilder.progressOrNull: protocol_buffers.Common.DownloadProgress?
+public val protocol_buffers.LibraryDownloadResponseOrBuilder.progressOrNull: protocol_buffers.DownloadProgress?
   get() = if (hasProgress()) getProgress() else null
 
-public val protocol_buffers.Lib.LibraryDownloadResponseOrBuilder.resultOrNull: protocol_buffers.Lib.LibraryDownloadResponse.Result?
+public val protocol_buffers.LibraryDownloadResponseOrBuilder.resultOrNull: protocol_buffers.LibraryDownloadResponse.Result?
   get() = if (hasResult()) getResult() else null
 

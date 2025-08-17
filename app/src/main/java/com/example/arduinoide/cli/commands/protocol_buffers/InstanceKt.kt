@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializeinstance")
-public inline fun instance(block: protocol_buffers.InstanceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Instance =
-  protocol_buffers.InstanceKt.Dsl._create(protocol_buffers.Common.Instance.newBuilder()).apply { block() }._build()
+public inline fun instance(block: protocol_buffers.InstanceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Instance =
+  protocol_buffers.InstanceKt.Dsl._create(protocol_buffers.Instance.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.Instance`
  */
@@ -16,17 +16,17 @@ public object InstanceKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.Instance.Builder
+    private val _builder: protocol_buffers.Instance.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.Instance.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.Instance.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.Instance = _builder.build()
+    internal fun _build(): protocol_buffers.Instance = _builder.build()
 
     /**
      * ```
@@ -55,6 +55,6 @@ public object InstanceKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.Instance.copy(block: `protocol_buffers`.InstanceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.Instance =
+public inline fun protocol_buffers.Instance.copy(block: `protocol_buffers`.InstanceKt.Dsl.() -> kotlin.Unit): protocol_buffers.Instance =
   `protocol_buffers`.InstanceKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 

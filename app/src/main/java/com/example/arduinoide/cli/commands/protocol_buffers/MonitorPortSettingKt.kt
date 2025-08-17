@@ -7,8 +7,8 @@
 package protocol_buffers;
 
 @kotlin.jvm.JvmName("-initializemonitorPortSetting")
-public inline fun monitorPortSetting(block: protocol_buffers.MonitorPortSettingKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.MonitorPortSetting =
-  protocol_buffers.MonitorPortSettingKt.Dsl._create(protocol_buffers.Common.MonitorPortSetting.newBuilder()).apply { block() }._build()
+public inline fun monitorPortSetting(block: protocol_buffers.MonitorPortSettingKt.Dsl.() -> kotlin.Unit): protocol_buffers.MonitorPortSetting =
+  protocol_buffers.MonitorPortSettingKt.Dsl._create(protocol_buffers.MonitorPortSetting.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `protocol_buffers.MonitorPortSetting`
  */
@@ -16,17 +16,17 @@ public object MonitorPortSettingKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: protocol_buffers.Common.MonitorPortSetting.Builder
+    private val _builder: protocol_buffers.MonitorPortSetting.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-      internal fun _create(builder: protocol_buffers.Common.MonitorPortSetting.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: protocol_buffers.MonitorPortSetting.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
   @kotlin.PublishedApi
-    internal fun _build(): protocol_buffers.Common.MonitorPortSetting = _builder.build()
+    internal fun _build(): protocol_buffers.MonitorPortSetting = _builder.build()
 
     /**
      * ```
@@ -80,6 +80,6 @@ public object MonitorPortSettingKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun protocol_buffers.Common.MonitorPortSetting.copy(block: `protocol_buffers`.MonitorPortSettingKt.Dsl.() -> kotlin.Unit): protocol_buffers.Common.MonitorPortSetting =
+public inline fun protocol_buffers.MonitorPortSetting.copy(block: `protocol_buffers`.MonitorPortSettingKt.Dsl.() -> kotlin.Unit): protocol_buffers.MonitorPortSetting =
   `protocol_buffers`.MonitorPortSettingKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
