@@ -1,0 +1,106 @@
+// This file is part of arduino-cli.
+//
+// Copyright 2024 ARDUINO SA (https://www.arduino.cc/)
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+package com.example.arduinoide.data.cli.protocol_buffers;
+
+option java_package = "com.example.arduinoide.data.cli.protocol_buffers";
+
+import "app/src/main/java/com/example/arduinoide/data/cli/proto/common.proto";
+import "app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto";
+
+// The main Arduino Platform service API.
+service ArduinoCoreService {
+  // Create a new Arduino Core instance.
+  rpc Create(CreateRequest) returns (CreateResponse) {}
+
+  // Initializes an existing Arduino Core instance by loading platforms and
+  // libraries.
+  rpc Init(InitRequest) returns (stream InitResponse) {}
+
+  // Compile an Arduino sketch.
+  rpc Compile(CompileRequest) returns (stream CompileResponse);
+}
+
+message CreateRequest {}
+
+message CreateResponse {
+  // An Arduino Core instance.
+  Instance instance = 1;
+}
+
+message InitRequest {
+  // An Arduino Core instance.
+  Instance instance = 1;
+  // Profile to use.
+  string profile = 2;
+  // The path where the sketch is stored.
+  string sketch_path = 3;
+}
+
+message InitResponse {
+  message Progress {
+    // Progress of the downloads of platforms and libraries index files.
+    DownloadProgress download_progress = 1;
+    // Describes the current stage of the initialization.
+    TaskProgress task_progress = 2;
+  }
+  oneof message {
+    // The initialization progress.
+    Progress init_progress = 1;
+    // The error in case the initialization failed.
+    string error = 2;
+    // Selected profile information.
+    SketchProfile profile = 3;
+  }
+}
+
+// Represent the reason why an instance initialization failed.
+enum FailedInstanceInitReason {
+  // FAILED_INSTANCE_INIT_REASON_UNSPECIFIED the error reason is not specialized.
+  FAILED_INSTANCE_INIT_REASON_UNSPECIFIED = 0;
+  // INVALID_INDEX_URL a package index url is malformed.
+  FAILED_INSTANCE_INIT_REASON_INVALID_INDEX_URL = 1;
+  // FAILED_INSTANCE_INIT_REASON_INDEX_LOAD_ERROR failure encountered while
+  // loading an index.
+  FAILED_INSTANCE_INIT_REASON_INDEX_LOAD_ERROR = 2;
+  // FAILED_INSTANCE_INIT_REASON_TOOL_LOAD_ERROR failure encountered while
+  // loading a tool.
+  FAILED_INSTANCE_INIT_REASON_TOOL_LOAD_ERROR = 3;
+  // FAILED_INSTANCE_INIT_REASON_INDEX_DOWNLOAD_ERROR failure encountered while
+  // downloading an index.
+  FAILED_INSTANCE_INIT_REASON_INDEX_DOWNLOAD_ERROR = 4;
+}
+
+message FailedInstanceInitError {
+  // specific cause of the error.
+  FailedInstanceInitReason reason = 1;
+  // explanation of the error.
+  string message = 2;
+}
+
+message LoadSketchRequest {
+  // Absolute path to single sketch file or a sketch folder.
+  string sketch_path = 2;
+
+  reserved 1;
+}
+
+message LoadSketchResponse {
+  // The loaded sketch.
+  Sketch sketch = 1;
+}
