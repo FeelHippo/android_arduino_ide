@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    id("com.google.protobuf")
+    id("com.google.protobuf") version "0.9.5"
 }
 
 protobuf {
@@ -93,7 +93,6 @@ dependencies {
     implementation(libs.grpc.stub.v1520)
     implementation(libs.grpc.protobuf.v1520)
     implementation(libs.grpc.okhttp)
-
     implementation(libs.protobuf.java.util)
     implementation(libs.protobuf.kotlin)
     implementation(libs.grpc.kotlin.stub)
