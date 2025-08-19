@@ -6252,57 +6252,181 @@ public final class Commands {
       "rs\032Dapp/src/main/java/com/example/arduin" +
       "oide/data/cli/proto/common.proto\032Eapp/sr" +
       "c/main/java/com/example/arduinoide/data/" +
-      "cli/proto/compile.proto\"\017\n\rCreateRequest" +
-      "\"^\n\016CreateResponse\022L\n\010instance\030\001 \001(\0132:.c" +
-      "om.example.arduinoide.data.cli.protocol_" +
-      "buffers.Instance\"\201\001\n\013InitRequest\022L\n\010inst" +
-      "ance\030\001 \001(\0132:.com.example.arduinoide.data" +
-      ".cli.protocol_buffers.Instance\022\017\n\007profil" +
-      "e\030\002 \001(\t\022\023\n\013sketch_path\030\003 \001(\t\"\243\003\n\014InitRes" +
-      "ponse\022`\n\rinit_progress\030\001 \001(\0132G.com.examp" +
-      "le.arduinoide.data.cli.protocol_buffers." +
-      "InitResponse.ProgressH\000\022\017\n\005error\030\002 \001(\tH\000" +
-      "\022R\n\007profile\030\003 \001(\0132?.com.example.arduinoi" +
-      "de.data.cli.protocol_buffers.SketchProfi" +
-      "leH\000\032\300\001\n\010Progress\022]\n\021download_progress\030\001" +
-      " \001(\0132B.com.example.arduinoide.data.cli.p" +
-      "rotocol_buffers.DownloadProgress\022U\n\rtask" +
-      "_progress\030\002 \001(\0132>.com.example.arduinoide" +
-      ".data.cli.protocol_buffers.TaskProgressB" +
-      "\t\n\007message\"\206\001\n\027FailedInstanceInitError\022Z" +
-      "\n\006reason\030\001 \001(\0162J.com.example.arduinoide." +
-      "data.cli.protocol_buffers.FailedInstance" +
-      "InitReason\022\017\n\007message\030\002 \001(\t\".\n\021LoadSketc" +
-      "hRequest\022\023\n\013sketch_path\030\002 \001(\tJ\004\010\001\020\002\"^\n\022L" +
-      "oadSketchResponse\022H\n\006sketch\030\001 \001(\01328.com." +
+      "cli/proto/compile.proto\032Bapp/src/main/ja" +
+      "va/com/example/arduinoide/data/cli/proto" +
+      "/core.proto\032Aapp/src/main/java/com/examp" +
+      "le/arduinoide/data/cli/proto/lib.proto\032F" +
+      "app/src/main/java/com/example/arduinoide" +
+      "/data/cli/proto/settings.proto\032Dapp/src/" +
+      "main/java/com/example/arduinoide/data/cl" +
+      "i/proto/upload.proto\"\017\n\rCreateRequest\"^\n" +
+      "\016CreateResponse\022L\n\010instance\030\001 \001(\0132:.com." +
       "example.arduinoide.data.cli.protocol_buf" +
-      "fers.Sketch*\223\002\n\030FailedInstanceInitReason" +
-      "\022+\n\'FAILED_INSTANCE_INIT_REASON_UNSPECIF" +
-      "IED\020\000\0221\n-FAILED_INSTANCE_INIT_REASON_INV" +
-      "ALID_INDEX_URL\020\001\0220\n,FAILED_INSTANCE_INIT" +
-      "_REASON_INDEX_LOAD_ERROR\020\002\022/\n+FAILED_INS" +
-      "TANCE_INIT_REASON_TOOL_LOAD_ERROR\020\003\0224\n0F" +
-      "AILED_INSTANCE_INIT_REASON_INDEX_DOWNLOA" +
-      "D_ERROR\020\0042\303\003\n\022ArduinoCoreService\022\215\001\n\006Cre" +
-      "ate\022?.com.example.arduinoide.data.cli.pr" +
-      "otocol_buffers.CreateRequest\032@.com.examp" +
-      "le.arduinoide.data.cli.protocol_buffers." +
-      "CreateResponse\"\000\022\211\001\n\004Init\022=.com.example." +
+      "fers.Instance\"\201\001\n\013InitRequest\022L\n\010instanc" +
+      "e\030\001 \001(\0132:.com.example.arduinoide.data.cl" +
+      "i.protocol_buffers.Instance\022\017\n\007profile\030\002" +
+      " \001(\t\022\023\n\013sketch_path\030\003 \001(\t\"\243\003\n\014InitRespon" +
+      "se\022`\n\rinit_progress\030\001 \001(\0132G.com.example." +
       "arduinoide.data.cli.protocol_buffers.Ini" +
-      "tRequest\032>.com.example.arduinoide.data.c" +
-      "li.protocol_buffers.InitResponse\"\0000\001\022\220\001\n" +
-      "\007Compile\022@.com.example.arduinoide.data.c" +
-      "li.protocol_buffers.CompileRequest\032A.com" +
+      "tResponse.ProgressH\000\022\017\n\005error\030\002 \001(\tH\000\022R\n" +
+      "\007profile\030\003 \001(\0132?.com.example.arduinoide." +
+      "data.cli.protocol_buffers.SketchProfileH" +
+      "\000\032\300\001\n\010Progress\022]\n\021download_progress\030\001 \001(" +
+      "\0132B.com.example.arduinoide.data.cli.prot" +
+      "ocol_buffers.DownloadProgress\022U\n\rtask_pr" +
+      "ogress\030\002 \001(\0132>.com.example.arduinoide.da" +
+      "ta.cli.protocol_buffers.TaskProgressB\t\n\007" +
+      "message\"\206\001\n\027FailedInstanceInitError\022Z\n\006r" +
+      "eason\030\001 \001(\0162J.com.example.arduinoide.dat" +
+      "a.cli.protocol_buffers.FailedInstanceIni" +
+      "tReason\022\017\n\007message\030\002 \001(\t\".\n\021LoadSketchRe" +
+      "quest\022\023\n\013sketch_path\030\002 \001(\tJ\004\010\001\020\002\"^\n\022Load" +
+      "SketchResponse\022H\n\006sketch\030\001 \001(\01328.com.exa" +
+      "mple.arduinoide.data.cli.protocol_buffer" +
+      "s.Sketch*\223\002\n\030FailedInstanceInitReason\022+\n" +
+      "\'FAILED_INSTANCE_INIT_REASON_UNSPECIFIED" +
+      "\020\000\0221\n-FAILED_INSTANCE_INIT_REASON_INVALI" +
+      "D_INDEX_URL\020\001\0220\n,FAILED_INSTANCE_INIT_RE" +
+      "ASON_INDEX_LOAD_ERROR\020\002\022/\n+FAILED_INSTAN" +
+      "CE_INIT_REASON_TOOL_LOAD_ERROR\020\003\0224\n0FAIL" +
+      "ED_INSTANCE_INIT_REASON_INDEX_DOWNLOAD_E" +
+      "RROR\020\0042\376&\n\022ArduinoCoreService\022\215\001\n\006Create" +
+      "\022?.com.example.arduinoide.data.cli.proto" +
+      "col_buffers.CreateRequest\032@.com.example." +
+      "arduinoide.data.cli.protocol_buffers.Cre" +
+      "ateResponse\"\000\022\211\001\n\004Init\022=.com.example.ard" +
+      "uinoide.data.cli.protocol_buffers.InitRe" +
+      "quest\032>.com.example.arduinoide.data.cli." +
+      "protocol_buffers.InitResponse\"\0000\001\022\220\001\n\007Co" +
+      "mpile\022@.com.example.arduinoide.data.cli." +
+      "protocol_buffers.CompileRequest\032A.com.ex" +
+      "ample.arduinoide.data.cli.protocol_buffe" +
+      "rs.CompileResponse0\001\022\250\001\n\017PlatformInstall" +
+      "\022H.com.example.arduinoide.data.cli.proto" +
+      "col_buffers.PlatformInstallRequest\032I.com" +
       ".example.arduinoide.data.cli.protocol_bu" +
-      "ffers.CompileResponse0\001B2\n0com.example.a" +
-      "rduinoide.data.cli.protocol_buffersb\006pro" +
-      "to3"
+      "ffers.PlatformInstallResponse0\001\022\253\001\n\020Plat" +
+      "formDownload\022I.com.example.arduinoide.da" +
+      "ta.cli.protocol_buffers.PlatformDownload" +
+      "Request\032J.com.example.arduinoide.data.cl" +
+      "i.protocol_buffers.PlatformDownloadRespo" +
+      "nse0\001\022\256\001\n\021PlatformUninstall\022J.com.exampl" +
+      "e.arduinoide.data.cli.protocol_buffers.P" +
+      "latformUninstallRequest\032K.com.example.ar" +
+      "duinoide.data.cli.protocol_buffers.Platf" +
+      "ormUninstallResponse0\001\022\250\001\n\017PlatformUpgra" +
+      "de\022H.com.example.arduinoide.data.cli.pro" +
+      "tocol_buffers.PlatformUpgradeRequest\032I.c" +
+      "om.example.arduinoide.data.cli.protocol_" +
+      "buffers.PlatformUpgradeResponse0\001\022\215\001\n\006Up" +
+      "load\022?.com.example.arduinoide.data.cli.p" +
+      "rotocol_buffers.UploadRequest\032@.com.exam" +
+      "ple.arduinoide.data.cli.protocol_buffers" +
+      ".UploadResponse0\001\022\272\001\n\025UploadUsingProgram" +
+      "mer\022N.com.example.arduinoide.data.cli.pr" +
+      "otocol_buffers.UploadUsingProgrammerRequ" +
+      "est\032O.com.example.arduinoide.data.cli.pr" +
+      "otocol_buffers.UploadUsingProgrammerResp" +
+      "onse0\001\022\262\001\n\023SupportedUserFields\022L.com.exa" +
+      "mple.arduinoide.data.cli.protocol_buffer" +
+      "s.SupportedUserFieldsRequest\032M.com.examp" +
+      "le.arduinoide.data.cli.protocol_buffers." +
+      "SupportedUserFieldsResponse\022\334\001\n!ListProg" +
+      "rammersAvailableForUpload\022Z.com.example." +
+      "arduinoide.data.cli.protocol_buffers.Lis" +
+      "tProgrammersAvailableForUploadRequest\032[." +
+      "com.example.arduinoide.data.cli.protocol" +
+      "_buffers.ListProgrammersAvailableForUplo" +
+      "adResponse\022\245\001\n\016BurnBootloader\022G.com.exam" +
+      "ple.arduinoide.data.cli.protocol_buffers" +
+      ".BurnBootloaderRequest\032H.com.example.ard" +
+      "uinoide.data.cli.protocol_buffers.BurnBo" +
+      "otloaderResponse0\001\022\243\001\n\016PlatformSearch\022G." +
+      "com.example.arduinoide.data.cli.protocol" +
+      "_buffers.PlatformSearchRequest\032H.com.exa" +
+      "mple.arduinoide.data.cli.protocol_buffer" +
+      "s.PlatformSearchResponse\022\250\001\n\017LibraryDown" +
+      "load\022H.com.example.arduinoide.data.cli.p" +
+      "rotocol_buffers.LibraryDownloadRequest\032I" +
+      ".com.example.arduinoide.data.cli.protoco" +
+      "l_buffers.LibraryDownloadResponse0\001\022\245\001\n\016" +
+      "LibraryInstall\022G.com.example.arduinoide." +
+      "data.cli.protocol_buffers.LibraryInstall" +
+      "Request\032H.com.example.arduinoide.data.cl" +
+      "i.protocol_buffers.LibraryInstallRespons" +
+      "e0\001\022\245\001\n\016LibraryUpgrade\022G.com.example.ard" +
+      "uinoide.data.cli.protocol_buffers.Librar" +
+      "yUpgradeRequest\032H.com.example.arduinoide" +
+      ".data.cli.protocol_buffers.LibraryUpgrad" +
+      "eResponse0\001\022\256\001\n\021ZipLibraryInstall\022J.com." +
+      "example.arduinoide.data.cli.protocol_buf" +
+      "fers.ZipLibraryInstallRequest\032K.com.exam" +
+      "ple.arduinoide.data.cli.protocol_buffers" +
+      ".ZipLibraryInstallResponse0\001\022\256\001\n\021GitLibr" +
+      "aryInstall\022J.com.example.arduinoide.data" +
+      ".cli.protocol_buffers.GitLibraryInstallR" +
+      "equest\032K.com.example.arduinoide.data.cli" +
+      ".protocol_buffers.GitLibraryInstallRespo" +
+      "nse0\001\022\253\001\n\020LibraryUninstall\022I.com.example" +
+      ".arduinoide.data.cli.protocol_buffers.Li" +
+      "braryUninstallRequest\032J.com.example.ardu" +
+      "inoide.data.cli.protocol_buffers.Library" +
+      "UninstallResponse0\001\022\256\001\n\021LibraryUpgradeAl" +
+      "l\022J.com.example.arduinoide.data.cli.prot" +
+      "ocol_buffers.LibraryUpgradeAllRequest\032K." +
+      "com.example.arduinoide.data.cli.protocol" +
+      "_buffers.LibraryUpgradeAllResponse0\001\022\307\001\n" +
+      "\032LibraryResolveDependencies\022S.com.exampl" +
+      "e.arduinoide.data.cli.protocol_buffers.L" +
+      "ibraryResolveDependenciesRequest\032T.com.e" +
+      "xample.arduinoide.data.cli.protocol_buff" +
+      "ers.LibraryResolveDependenciesResponse\022\240" +
+      "\001\n\rLibrarySearch\022F.com.example.arduinoid" +
+      "e.data.cli.protocol_buffers.LibrarySearc" +
+      "hRequest\032G.com.example.arduinoide.data.c" +
+      "li.protocol_buffers.LibrarySearchRespons" +
+      "e\022\232\001\n\013LibraryList\022D.com.example.arduinoi" +
+      "de.data.cli.protocol_buffers.LibraryList" +
+      "Request\032E.com.example.arduinoide.data.cl" +
+      "i.protocol_buffers.LibraryListResponse\022\254" +
+      "\001\n\021ConfigurationSave\022J.com.example.ardui" +
+      "noide.data.cli.protocol_buffers.Configur" +
+      "ationSaveRequest\032K.com.example.arduinoid" +
+      "e.data.cli.protocol_buffers.Configuratio" +
+      "nSaveResponse\022\254\001\n\021ConfigurationOpen\022J.co" +
+      "m.example.arduinoide.data.cli.protocol_b" +
+      "uffers.ConfigurationOpenRequest\032K.com.ex" +
+      "ample.arduinoide.data.cli.protocol_buffe" +
+      "rs.ConfigurationOpenResponse\022\251\001\n\020Configu" +
+      "rationGet\022I.com.example.arduinoide.data." +
+      "cli.protocol_buffers.ConfigurationGetReq" +
+      "uest\032J.com.example.arduinoide.data.cli.p" +
+      "rotocol_buffers.ConfigurationGetResponse" +
+      "\022\254\001\n\021SettingsEnumerate\022J.com.example.ard" +
+      "uinoide.data.cli.protocol_buffers.Settin" +
+      "gsEnumerateRequest\032K.com.example.arduino" +
+      "ide.data.cli.protocol_buffers.SettingsEn" +
+      "umerateResponse\022\251\001\n\020SettingsGetValue\022I.c" +
+      "om.example.arduinoide.data.cli.protocol_" +
+      "buffers.SettingsGetValueRequest\032J.com.ex" +
+      "ample.arduinoide.data.cli.protocol_buffe" +
+      "rs.SettingsGetValueResponse\022\251\001\n\020Settings" +
+      "SetValue\022I.com.example.arduinoide.data.c" +
+      "li.protocol_buffers.SettingsSetValueRequ" +
+      "est\032J.com.example.arduinoide.data.cli.pr" +
+      "otocol_buffers.SettingsSetValueResponseB" +
+      "2\n0com.example.arduinoide.data.cli.proto" +
+      "col_buffersb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.example.arduinoide.data.cli.protocol_buffers.Common.getDescriptor(),
           com.example.arduinoide.data.cli.protocol_buffers.Compile.getDescriptor(),
+          com.example.arduinoide.data.cli.protocol_buffers.Core.getDescriptor(),
+          com.example.arduinoide.data.cli.protocol_buffers.Lib.getDescriptor(),
+          com.example.arduinoide.data.cli.protocol_buffers.Settings.getDescriptor(),
+          com.example.arduinoide.data.cli.protocol_buffers.Upload.getDescriptor(),
         });
     internal_static_com_example_arduinoide_data_cli_protocol_buffers_CreateRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -6355,6 +6479,10 @@ public final class Commands {
     descriptor.resolveAllFeaturesImmutable();
     com.example.arduinoide.data.cli.protocol_buffers.Common.getDescriptor();
     com.example.arduinoide.data.cli.protocol_buffers.Compile.getDescriptor();
+    com.example.arduinoide.data.cli.protocol_buffers.Core.getDescriptor();
+    com.example.arduinoide.data.cli.protocol_buffers.Lib.getDescriptor();
+    com.example.arduinoide.data.cli.protocol_buffers.Settings.getDescriptor();
+    com.example.arduinoide.data.cli.protocol_buffers.Upload.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

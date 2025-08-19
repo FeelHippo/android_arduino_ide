@@ -129,7 +129,7 @@ public final class Compile {
      *
      * <code>string build_cache_path = 6 [deprecated = true];</code>
      * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
      * @return The buildCachePath.
      */
     @java.lang.Deprecated java.lang.String getBuildCachePath();
@@ -141,7 +141,7 @@ public final class Compile {
      *
      * <code>string build_cache_path = 6 [deprecated = true];</code>
      * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
      * @return The bytes for buildCachePath.
      */
     @java.lang.Deprecated com.google.protobuf.ByteString
@@ -868,7 +868,7 @@ java.lang.String defaultValue);
      *
      * <code>string build_cache_path = 6 [deprecated = true];</code>
      * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
      * @return The buildCachePath.
      */
     @java.lang.Override
@@ -892,7 +892,7 @@ java.lang.String defaultValue);
      *
      * <code>string build_cache_path = 6 [deprecated = true];</code>
      * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+     *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
      * @return The bytes for buildCachePath.
      */
     @java.lang.Override
@@ -3148,7 +3148,7 @@ java.lang.String defaultValue) {
        *
        * <code>string build_cache_path = 6 [deprecated = true];</code>
        * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
        * @return The buildCachePath.
        */
       @java.lang.Deprecated public java.lang.String getBuildCachePath() {
@@ -3171,7 +3171,7 @@ java.lang.String defaultValue) {
        *
        * <code>string build_cache_path = 6 [deprecated = true];</code>
        * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
        * @return The bytes for buildCachePath.
        */
       @java.lang.Deprecated public com.google.protobuf.ByteString
@@ -3195,7 +3195,7 @@ java.lang.String defaultValue) {
        *
        * <code>string build_cache_path = 6 [deprecated = true];</code>
        * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
        * @param value The buildCachePath to set.
        * @return This builder for chaining.
        */
@@ -3215,7 +3215,7 @@ java.lang.String defaultValue) {
        *
        * <code>string build_cache_path = 6 [deprecated = true];</code>
        * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
        * @return This builder for chaining.
        */
       @java.lang.Deprecated public Builder clearBuildCachePath() {
@@ -3232,7 +3232,7 @@ java.lang.String defaultValue) {
        *
        * <code>string build_cache_path = 6 [deprecated = true];</code>
        * @deprecated com.example.arduinoide.data.cli.protocol_buffers.CompileRequest.build_cache_path is deprecated.
-       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=44
+       *     See app/src/main/java/com/example/arduinoide/data/cli/proto/compile.proto;l=40
        * @param value The bytes for buildCachePath to set.
        * @return This builder for chaining.
        */
@@ -14346,13 +14346,8 @@ java.lang.String defaultValue) {
       "e\030\001 \001(\t\022\014\n\004file\030\002 \001(\t\022\014\n\004line\030\003 \001(\003\022\016\n\006c" +
       "olumn\030\004 \001(\003\"T\n\025CompileDiagnosticNote\022\017\n\007" +
       "message\030\001 \001(\t\022\014\n\004file\030\002 \001(\t\022\014\n\004line\030\003 \001(" +
-      "\003\022\016\n\006column\030\004 \001(\0032\261\001\n\016CompileService\022\236\001\n" +
-      "\025StreamCompileMessages\022@.com.example.ard" +
-      "uinoide.data.cli.protocol_buffers.Compil" +
-      "eRequest\032A.com.example.arduinoide.data.c" +
-      "li.protocol_buffers.CompileResponse0\001B2\n" +
-      "0com.example.arduinoide.data.cli.protoco" +
-      "l_buffersb\006proto3"
+      "\003\022\016\n\006column\030\004 \001(\003B2\n0com.example.arduino" +
+      "ide.data.cli.protocol_buffersb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

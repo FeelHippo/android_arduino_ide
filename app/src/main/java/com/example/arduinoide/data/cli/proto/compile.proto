@@ -23,10 +23,6 @@ option java_package = "com.example.arduinoide.data.cli.protocol_buffers";
 import "app/src/main/java/com/example/arduinoide/data/cli/proto/common.proto";
 import "app/src/main/java/com/example/arduinoide/data/cli/proto/lib.proto";
 
-service CompileService {
-  rpc StreamCompileMessages(CompileRequest) returns (stream CompileResponse);
-}
-
 message CompileRequest {
   // Arduino Core Service instance from the `Init` response.
   Instance instance = 1;

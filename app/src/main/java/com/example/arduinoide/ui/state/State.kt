@@ -10,7 +10,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.mapSaver
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import androidx.core.net.toUri
 import com.example.arduinoide.presentation.ArduinoIDEView
 import com.example.arduinoide.service_locator.ServiceLocator
 
